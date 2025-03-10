@@ -2,7 +2,7 @@
 
 | Student's name | SCIPER |
 | -------------- | ------ |
-| | |
+|Élise Boyer | 326911 |
 | | |
 | | |
 
