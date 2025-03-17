@@ -1,3 +1,4 @@
 # Ignore dataset 
 
 london_houses.csv
+*.png
