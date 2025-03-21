@@ -4,7 +4,7 @@
 | -------------- | ------ |
 |Élise Boyer | 326911 |
 |Gauthier Nielly|346271|
-| | |
+|Charles Girardot|316073|
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
