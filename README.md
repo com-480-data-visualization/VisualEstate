@@ -11,7 +11,9 @@
 ## Milestone 1 (21st March, 5pm)
 
 **10% of the final grade**
+
 Can be found under VisualEstate___M1.pdf.
+
 ## Milestone 2 (18th April, 5pm)
 
 **10% of the final grade**
