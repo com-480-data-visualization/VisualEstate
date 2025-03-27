@@ -1,0 +1,118 @@
+/* CSS Document */
+
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+html {
+    font-size: 16px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 5em 1em; 
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5em;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); 
+    position: sticky;
+    top: 0;           /* This is required for sticky to work */
+    background-color: white; /* Prevents see-through when scrolling */
+    z-index: 1000;    /
+  }
+
+nav .logo {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+nav .nav-links a {
+    margin: 2em;
+    color: black;
+    align-items: center;
+    font-size: large;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+nav .nav-links a:hover {
+    color: #41b7f3;
+    text-decoration: underline;
+
+  }
+
+.container {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.intro {
+    border-color: #41b7f3;
+    border-style: dashed;
+    padding: 3rem 5rem 6rem;
+    margin-bottom: 2em;
+    font-size: xx-large;
+  }
+
+
+  .earth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* base alignment */
+    gap: 2rem;
+    padding: 2rem;
+    position: relative;
+    font-size: x-large;
+    margin-bottom: 8rem;
+  }
+  
+  .earth-text-left,
+  .earth-text-right,
+  .earth-image {
+    flex: 1;
+  }
+  
+
+  .earth-text-left {
+    transform: translateY(-40px); 
+  }
+  
+
+  .earth-text-right {
+    transform: translateY(40px); 
+    
+  }
+  
+
+  
+
+
+  .map-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: large;
+
+
+   
+  }
+  
+.map-row {
+
+    display: flex;
+   justify-content: space-evenly;
+    gap: 2rem;
+
+    flex-wrap: wrap; 
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.map-row img {
+        width: 475px;
+        height: auto;
+}
