@@ -12,6 +12,19 @@ html {
     font-size: 16px;
 }
 
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+
   nav {
     display: flex;
     align-items: center;
@@ -31,14 +44,24 @@ html {
 nav .logo {
     font-size: 2em;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
    
-  }
+}
 
-  nav img {
+nav img {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-  }
+}
+
+nav .city_nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: x-large;
+    font-weight: 700;
+}
 
 nav .nav-links a {
     margin: 2em;
@@ -98,7 +121,6 @@ nav .nav-links a:hover {
     
   }
 
-
   .map-intro {
     text-align: center;
     margin-bottom: 2rem;
@@ -109,7 +131,6 @@ nav .nav-links a:hover {
     line-height: 2.5rem;
    
   }
-  
 
 
   .city-container {
@@ -150,7 +171,6 @@ nav .nav-links a:hover {
     justify-content: center; /* horizontal centering */
     align-items: center;
 
-    font-family: 
     font-size: 1.5em;
     color: rgb(255, 255, 255);
     font-weight: bold;
