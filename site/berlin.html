@@ -3,28 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visual Estate</title>
+  <title>Visual Estate Berlin</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="'citystylesheet" hred="city.css">
-
-</html>
-
+  <link rel="stylesheet" href="city.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
 
 
 <body>
 
 
 
-<nav>
+  <nav>
     <a href="index.html" class="logo">Visual Estate</a>
     <div class ="city_nav">Berlin</div>
-
+  
     <div class="nav-links">
       <a href="#">About</a>
       <a href="#">Cities</a>
       <a href="#">Contact</a>
     </div>
   </nav>
-
-
+  <div id="map" style="height: 400px;"></div>
+  <script>
+    var map = L.map('map').setView([52.5200, 13.4050], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
+    var marker = L.marker([52.5200, 13.4050]).addTo(map);
+  </script>
 </body>
+</html>

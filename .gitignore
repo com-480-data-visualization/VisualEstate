@@ -4,3 +4,6 @@ config.js
 
 # Ignore image from EDA
 EDA/*.png
+
+# Ignore Mac OS system files
+.DS_Store

@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visual Estate</title>
+  <title>Visual Estate London</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="'citystylesheet" hred="city.css">
-
-</html>
-
+  <link rel="stylesheet" href="city.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
 
 
 <body>
 
 
 
-<nav>
+  <nav>
     <a href="index.html" class="logo">Visual Estate</a>
     <div class ="city_nav">London</div>
 
@@ -24,25 +24,30 @@
       <a href="#">Cities</a>
       <a href="#">Contact</a>
     </div>
- </nav>
+  </nav>
 
 
-<div class="container">
-  <div class="intro">
-    <p>Catchy title</p>
-  <div class="description">
+  <div class="container">
+    <div class="intro">
+      <p>Catchy title</p>
+    </div>
+    <div class="description">
     explaination of the data that can be found on the website, vizualization 
     </div>
-    </div>
-
+    
     <div class = 'intro' > 
-        Choropleth map of London showing the average price of properties in each borough.
+      Choropleth map of London showing the average price of properties in each borough.
     </div>
-
-
-
-
-
-
-
+    <div id="map" style="height: 400px;"></div>
+  </script>
+  <script>
+    var map = L.map('map').setView([51.5074, -0.1278], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
+    var marker = L.marker([51.5074, -0.1278]).addTo(map);
+  </script>
+  </div>
 </body>
+</html>
