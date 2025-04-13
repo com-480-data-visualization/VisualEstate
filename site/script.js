@@ -1,7 +1,7 @@
-import { MAPBOX_TOKEN } from './config.js';
+
 
 window.onload = function () {
-  mapboxgl.accessToken = MAPBOX_TOKEN
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZWxib3llciIsImEiOiJjbThyZ3EyZ3owdWV3MmtzNW5qMTBhZTkzIn0.-lYW5GnoaUD1NGkeSbLecg';
 
   const map = new mapboxgl.Map({
     container: 'map',
