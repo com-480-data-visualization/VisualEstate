@@ -4,3 +4,6 @@ config.js
 
 # Ignore image from EDA
 EDA/*.png
+
+
+.vscode
