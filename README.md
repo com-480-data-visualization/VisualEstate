@@ -34,6 +34,8 @@ By employing **data visualization** and interactive techniques, we aim to help u
 
 *GitHub Usernames:*
 - [@elboyer228](https://github.com/elboyer228)
+- [gauthiernielly](https://github.com/gauthiernielly)
+- [charlesgirardot](https://github.com/charlesgirardot)
 
 ---
 
