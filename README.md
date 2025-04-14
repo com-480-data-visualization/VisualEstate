@@ -1,6 +1,8 @@
 # VisualEstate: Data Visualization Project (COM-480)
 
-This repository contains our **data visualization project** for the COM-480 course. Our goal is to present meaningful insights into real-estate data through **interactive** and **engaging** visualizations, leveraging modern web technologies and best practices. Check our website !
+This repository contains our **data visualization project** for the COM-480 course. Our goal is to present meaningful insights into real-estate data through **interactive** and **engaging** visualizations, leveraging modern web technologies and best practices. 
+
+## Check our [website](https://com-480-data-visualization.github.io/VisualEstate/)!
 
 ---
 
