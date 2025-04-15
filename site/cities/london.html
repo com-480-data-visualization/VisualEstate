@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visual Estate</title>
-  <link rel="'citystylesheet" hred="city.css">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../city.css">
 
-</html>
+</head>
+
+
 
 
 
@@ -45,10 +47,34 @@
       personality, contributing to London's dynamic and diverse housing landscape.</p>
   </div>
 
-  <img src="../images/london_heatmap.png" alt="London" class="city-image" width="900" height="600">
+
+  <div class = "heatmap_container">
+  
+  <div class = "fig_caption">
+    <h2>Temperature Check : London's hottest neighborhoods</h2>
+    <p>This heatmap shows the average price of properties in London. The darker the color, the higher the price.</p>
+  </div>
+
+  <img src="../images/london_heatmap.png" alt="London" class="city-image" width="700" height="500"  >
+  </div>
+
+  
 
 
+<div class="london_treemap_container">
 
-  <img  src = "../images/london_treemap.png" alt="london treemap" class="city-image" width="900" height="600">
+ <iframe src="../assets/treemap.html" width="700" height="700" frameborder="0" scrolling="no" overflow="hidden" style="background-color: aliceblue; margin-left: 2rem;"></iframe>
+ 
+ <div class="fig_caption">
+  <h2> Feature by feature: London Real Estate Unboxed </h2>
+  <p>This treemap visualizes the features of properties in London. Each rectangle represents a property, and its size and color encode different attributes. Hover over a rectangle to see specific details.</p>
+ </div>
+
+
+</div>
+
+
   
 </body>
+
+</html>

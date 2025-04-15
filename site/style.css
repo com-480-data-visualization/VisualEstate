@@ -87,19 +87,15 @@ nav .nav-links a:hover {
   display: none;
   position: absolute;
   background-color: white;
- 
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Example shadow */
   z-index: 10;
-  
 }
 
-/* Style to show the dropdown on hover (or click, using JavaScript) */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Optional: Style the links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -129,7 +125,6 @@ nav .nav-links a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* base alignment */
   gap: 2rem;
   padding: 2rem;
   position: relative;
@@ -229,11 +224,11 @@ nav .nav-links a:hover {
   opacity: 1;
 }
 
+
 .city-infos {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   gap: 6rem;
   padding: 5rem;
   background-color: rgb(140, 197, 247);
@@ -244,4 +239,11 @@ nav .nav-links a:hover {
   font-size: 3rem;
   font-weight: bold;
   width: 75%;
+  text-align: left;
+}
+
+.city-infos p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
 }

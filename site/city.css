@@ -1,0 +1,47 @@
+
+nav.city_nav {
+   font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+
+
+.heatmap_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+
+  margin-right: 5rem;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+
+
+
+
+.london_treemap_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-right: 1rem;
+    padding-left: 2rem;
+   
+  
+
+}
+
+.fig_caption {
+  max-width: 800px;
+  text-align: top;
+  align-items: start;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
