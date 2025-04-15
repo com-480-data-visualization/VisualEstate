@@ -1,5 +1,4 @@
 
-
 window.onload = function () {
   mapboxgl.accessToken = 'pk.eyJ1IjoiZWxib3llciIsImEiOiJjbThyZ3EyZ3owdWV3MmtzNW5qMTBhZTkzIn0.-lYW5GnoaUD1NGkeSbLecg';
 
@@ -21,7 +20,11 @@ window.onload = function () {
       'horizon-blend': 0.025
     });
   });
+
+  
 };
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   function animateCount(el, target, duration = 1000) {

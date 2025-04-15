@@ -37,6 +37,7 @@ nav {
   top: 0;
   background-color: white;
   z-index: 998;
+  margin-bottom: 2rem;
 }
 
 nav .logo {
@@ -113,11 +114,14 @@ nav .nav-links a:hover {
 }
 
 .intro {
-  border-color: #41b7f3;
-  border-style: dashed;
   padding: 3rem 5rem 6rem;
-  margin-bottom: 2em;
   font-size: xx-large;
+}
+
+.intro p{
+  line-height: 4rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
 }
 
 
