@@ -21,6 +21,7 @@
     <div class="city_nav">London</div>
 
     <div class="nav-links">
+      <a href="../milestone_2.html" style="font-style: italic; color: rgb(169, 45, 45);">About Milestone 2</a>
       <a href="#">About</a>
       <div class="dropdown">
         <a>Cities ▾</a>
@@ -48,33 +49,62 @@
   </div>
 
 
-  <div class = "heatmap_container">
-  
-  <div class = "fig_caption">
-    <h2>Temperature Check : London's hottest neighborhoods</h2>
-    <p>This heatmap shows the average price of properties in London. The darker the color, the higher the price.</p>
+  <div class="london_treemap_container">
+
+    <div class="fig_caption">
+      <h2>Temperature Check : London's hottest neighborhoods</h2>
+      <p>This heatmap shows the average price of properties in London. The darker the color, the higher the price.</p>
+    </div>
+
+    <img src="../images/london_heatmap.png" alt="London" class="city-image" width="700" height="500">
   </div>
 
-  <img src="../images/london_heatmap.png" alt="London" class="city-image" width="700" height="500"  >
+
+  <div class="london_treemap_container">
+
+    <iframe src="../assets/london_density_map.html" class = 'density_map' width="700" height="525" frameborder="0" scrolling="no" style="margin-left: 2rem;"></iframe>
+
+    <div class="fig_caption">
+      <h2>Where the Market Clusters </h2>
+      <p>This heatmap shows the density of properties in London in our dataset. The darker the color, the higher the density.</p>
+
+    </div>
+
   </div>
 
-  
 
 
-<div class="london_treemap_container">
-
- <iframe src="../assets/treemap.html" width="700" height="700" frameborder="0" scrolling="no" overflow="hidden" style="background-color: aliceblue; margin-left: 2rem;"></iframe>
- 
- <div class="fig_caption">
-  <h2> Feature by feature: London Real Estate Unboxed </h2>
-  <p>This treemap visualizes the features of properties in London. Each rectangle represents a property, and its size and color encode different attributes. Hover over a rectangle to see specific details.</p>
- </div>
 
 
-</div>
+
+  <div class="london_treemap_container">
+
+    <iframe src="../assets/london_treemap.html" width="725" height="725" frameborder="0" scrolling="no"
+      overflow="hidden" style="margin-left: 2rem;"></iframe>
+
+    <div class="fig_caption">
+      <h2> Feature by feature: London Real Estate Unboxed </h2>
+      <p>This treemap visualizes the features of properties in London. Each rectangle represents a property, and its
+        size and color encode different attributes. Hover over a rectangle to see specific details.</p>
+    </div>
 
 
-  
+  </div>
+
+
+
+  <div class="london_scatter_plot_container ">
+    <iframe src="../assets/london_scatter_plot_price_sqm.html" width="100%" height="450" frameborder="0" scrolling="no"
+      overflow="hidden" style="margin-left: 2rem;"></iframe>
+
+    <div class="fig_caption_scatter_plot">
+      <h2>What’s the Price of a View… or a Garage?</h2>
+      <p>This scatter plot shows the relationship between the price and the square meters of properties in London. It will be implemented in the future to show the relationship between the price and the other features. Note: some cleaning of the london neighbhood is needed to attribut more precise neighborhoods to the properties.</p>
+    </div>
+  </div>
+
+
+
 </body>
 
 </html>
