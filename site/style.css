@@ -228,26 +228,3 @@ nav .nav-links a:hover {
   opacity: 1;
 }
 
-
-.city-infos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 6rem;
-  padding: 5rem;
-  background-color: rgb(140, 197, 247);
-}
-
-
-.city-infos h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  width: 75%;
-  text-align: left;
-}
-
-.city-infos p {
-  font-size: 1rem;
-  line-height: 1.6;
-  text-align: justify;
-}
