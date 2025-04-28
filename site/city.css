@@ -14,7 +14,7 @@ nav.city_nav {
   align-items: center;
   gap: 6rem;
   padding: 5rem;
-  background-color: rgb(140, 197, 247);
+
 }
 
 
@@ -26,33 +26,26 @@ nav.city_nav {
 }
 
 .city-infos p {
-  font-size: 1rem;
+  font-size: 20px;
   line-height: 1.6;
   text-align: justify;
 }
 
 
-
-
-/* 
-.heatmap_container {
+.image-container {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: row;
   gap: 2rem;
-
-  margin-right: 5rem;
-  margin-left: 5rem;
-  margin-top: 1rem;
 }
 
- */
 
-
-
-
-
-
+.image-container img {
+  width: 20rem;
+  height: auto;
+  max-width: 500px;
+  margin-right: 2rem;
+  
+}
 
 
 

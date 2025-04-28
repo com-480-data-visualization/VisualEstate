@@ -1,29 +1,46 @@
-
 window.onload = function () {
-  mapboxgl.accessToken = 'pk.eyJ1IjoiZWxib3llciIsImEiOiJjbThyZ3EyZ3owdWV3MmtzNW5qMTBhZTkzIn0.-lYW5GnoaUD1NGkeSbLecg';
+  gsap.registerPlugin(ScrollTrigger);
 
-  const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v12',
-    projection: 'globe',
-    zoom: 1,
-    center: [0, 20],
-    pitch: 0,
-    bearing: 0
+  gsap.from(".img1", {
+    scrollTrigger: ".img1",
+    opacity: 0,
+    duration: 1
   });
-
-  map.on('style.load', () => {
-    map.setFog({
-      'color': 'rgba(255,255,255,0.01)',
-      'high-color': '#add8e6',
-      'space-color': 'rgba(0,0,0,0)',
-      'horizon-blend': 0.025
-    });
+  gsap.from(".img2", {
+    scrollTrigger: ".img2",
+    opacity: 0,
+    duration: 1
+  });
+  gsap.from(".img3", {
+    scrollTrigger: ".img3",
+    opacity: 0,
+    duration: 1
   });
 
   
-};
+  if (document.getElementById('map')) {
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZWxib3llciIsImEiOiJjbThyZ3EyZ3owdWV3MmtzNW5qMTBhZTkzIn0.-lYW5GnoaUD1NGkeSbLecg';
 
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v12',
+      projection: 'globe',
+      zoom: 1,
+      center: [0, 20],
+      pitch: 0,
+      bearing: 0
+    });
+
+    map.on('style.load', () => {
+      map.setFog({
+        'color': 'rgba(255,255,255,0.01)',
+        'high-color': '#add8e6',
+        'space-color': 'rgba(0,0,0,0)',
+        'horizon-blend': 0.025
+      });
+    });
+  }
+};
 
 
 document.addEventListener('DOMContentLoaded', () => {
