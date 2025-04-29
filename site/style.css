@@ -10,11 +10,13 @@ body, html {
   font-size: 16px;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  overflow-y: scroll;
   height: 100%;
-
 }
 
-
+* {
+  box-sizing: border-box;
+}
 
 
 
@@ -26,8 +28,10 @@ body, html {
   align-items: center;
   justify-content: center;
   color: white;
+  overflow: hidden;
 
 }
+
 
 
 
@@ -37,13 +41,18 @@ nav {
   align-items: center;
   justify-content: space-between;;
   padding: 3em 5em 2em;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
   top: 0;
   background-color: transparent;
   z-index: 998;
 }
 
+.section:first-of-type {
+  padding-top: 0; /* adjust based on nav height */
+  box-sizing: border-box;
+}
 
 nav .logo {
   font-size: 2em;
