@@ -1,21 +1,5 @@
 window.onload = function () {
-  gsap.registerPlugin(ScrollTrigger);
 
-  gsap.from(".img1", {
-    scrollTrigger: ".img1",
-    opacity: 0,
-    duration: 1
-  });
-  gsap.from(".img2", {
-    scrollTrigger: ".img2",
-    opacity: 0,
-    duration: 1
-  });
-  gsap.from(".img3", {
-    scrollTrigger: ".img3",
-    opacity: 0,
-    duration: 1
-  });
 
   
   if (document.getElementById('map')) {
