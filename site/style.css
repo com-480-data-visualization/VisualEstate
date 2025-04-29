@@ -33,7 +33,10 @@ body, html {
 }
 
 
-
+.section:first-of-type {
+  padding-top: 0; 
+  box-sizing: border-box;
+}
 
 
 nav {
@@ -49,10 +52,7 @@ nav {
   z-index: 998;
 }
 
-.section:first-of-type {
-  padding-top: 0; /* adjust based on nav height */
-  box-sizing: border-box;
-}
+
 
 nav .logo {
   font-size: 2em;
