@@ -5,7 +5,7 @@ body, html {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #141313;
+  background-color: #090b09;
   color: white;
   font-size: 16px;
   scroll-snap-type: y mandatory;
@@ -53,11 +53,11 @@ nav {
   justify-content: space-between;
   position: relative;
   padding: 3em 5em 2em;
-  border-bottom: 1px solid #ccc;
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+  /* box-shadow: 0 2px 20px rgba(255, 255, 255, 0.2);  */
   position: sticky;
   top: 0;
-  background-color: #1d1a1a;
+  background-color: transparent;
   z-index: 998;
 
 }
@@ -96,7 +96,7 @@ nav .nav-links a {
 }
 
 nav .nav-links a:hover {
-  color: #948979;
+  color: #ed7e00;
   text-decoration: underline;
 }
 
@@ -109,8 +109,7 @@ nav .nav-links a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #292525;
-  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2); /* Example shadow */
+  background-color: #0c0c0c94;
   z-index: 10;
 
 }
@@ -126,9 +125,7 @@ nav .nav-links a:hover {
   display: block;
 }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
+
 
 
 
@@ -141,9 +138,8 @@ nav .nav-links a:hover {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  padding: 5rem;
+  padding: 4rem;
   color: white;
-  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -153,7 +149,7 @@ nav .nav-links a:hover {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.4); 
   z-index: 1;
 }
 
@@ -165,44 +161,54 @@ nav .nav-links a:hover {
 
 
 .intro-text {
-  flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: xx-large;
-  font-weight: bold;
-  line-height: 1.5;
-  margin-bottom: -5rem;
-  margin-top: 5rem;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: left;
+  align-items: end;
+  padding-left: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 20rem;
+}
+
+.intro-text > *:first-child {
+  flex: 0 0 60%; 
+}
+
+.intro-text p{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .earth {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 1rem;
+  padding: 1rem;
   position: relative;
   font-size: x-large;
   margin-bottom: 2rem;
 }
 
 .earth-text-left,
-.earth-text-right,
-.earth-image {
+.earth-text-right {
   flex: 1;
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 2rem;
 }
 
 
 .earth-text-left {
-  transform: translateY(-40px);
+  transform: translateY(-8rem);
 }
 
 
 .earth-text-right {
-  transform: translateY(40px);
+  transform: translateY(8rem);
 
 }
 
