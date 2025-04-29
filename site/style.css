@@ -9,10 +9,9 @@ body, html {
   color: white;
   font-size: 16px;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
   scroll-behavior: smooth;
   height: 100%;
- 
+
 }
 
 
@@ -33,35 +32,17 @@ body, html {
 
 
 
-.scroll-nav {
-  position: fixed;
-  top: 50%;
-  right: 30px;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  z-index: 1000;
-}
-
-
-
-
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
+  justify-content: space-between;;
   padding: 3em 5em 2em;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
-  /* box-shadow: 0 2px 20px rgba(255, 255, 255, 0.2);  */
   position: sticky;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
   top: 0;
   background-color: transparent;
   z-index: 998;
-
 }
-
 
 
 nav .logo {
@@ -240,61 +221,105 @@ nav .nav-links a:hover {
 
 
 
-.city-container {
+
+
+.citycard {
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 0 2rem;
-  flex-wrap: nowrap;
-  
-}
-
-.city-card {
-  position: relative;
-  display: block;
-  width: 475px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  margin-bottom: 3rem;
-}
-
-.city-card img {
-  width: 100%;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.city-card:hover img {
-  transform: scale(1.05);
-}
-
-.city-name {
-  position: absolute;
-  top: -0.60rem;
-  left: -0.75rem;
-  right: -0.75rem;
-  bottom: -0.60rem;
-
-  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 1.5em;
-  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10rem;
+  gap: 2rem; 
+}
+
+.image-stack-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  gap: 1rem;
+}
+
+.image-stack-section img {
+  width: 300px; 
+  height: auto;
+}
+
+.image-stack-section img:nth-child(1) {
+  position: relative;
+  top: 20px;
+  left: -150px;
+  z-index: 2;
+}
+
+.image-stack-section img:nth-child(2) {
+  position: relative;
+  top: -50px; 
+  left: 200px;
+  z-index: 1;
+}
+
+.image-stack-section img:nth-child(3) {
+  position: relative;
+  top: -100px; 
+  left: -150px;
+  z-index: 5;
+}
+.city-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;
+  padding: 2rem;
+  font-size: x-large;
+  line-height: 2.5rem;
+  gap: 1.5rem;
+}
+
+.city-description h1 {
+  font-size: 3rem;
   font-weight: bold;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: color-dodge;
+  width: 100%;
+  line-height: 3.5rem;
 }
 
-.city-card:hover .city-name {
-  opacity: 1;
+.city-description p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: justify;
 }
 
+.text-row {
+  display: flex;               
+  flex-direction: row;
+  gap: 2rem;
+}
 
+.city-btn {
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgb(21, 21, 21);
+  transition: background 0.3s ease;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-self: end;
+  margin-right: 12rem;
+  text-decoration: none;
+  box-shadow: 4px 6px 10px rgba(245, 222, 222, 0.961);
+}
 
-
-
+.city-btn:hover {
+  background-color: #444343;
+}
 
 
 

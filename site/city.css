@@ -49,6 +49,13 @@ nav.city_nav {
 
 
 
+
+
+
+
+/* For plot settings */ 
+
+
 .london_treemap_container {
     display: flex;
     justify-content: space-evenly;
@@ -101,3 +108,6 @@ nav.city_nav {
   padding-left: 3rem;
   padding-right: 3rem;
 }
+
+
+
