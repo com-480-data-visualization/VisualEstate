@@ -155,6 +155,14 @@
 }
 
 
+
+
+
+
+
+/* For plot settings */ 
+
+
 .london_treemap_container iframe {
   flex: 0 0 50%;
   width: 100%;
@@ -505,3 +513,6 @@ ul {
   padding-left: 3rem;
  
 }
+
+
+
