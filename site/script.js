@@ -39,7 +39,8 @@ window.onload = function () {
         'horizon-blend': 0.025,
       });
     });
-  }
+  };
+
 };
 
 
