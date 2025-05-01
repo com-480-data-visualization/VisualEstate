@@ -5,7 +5,7 @@ body, html {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #090b09;
+  background-color: #050505;
   color: white;
   font-size: 16px;
   scroll-snap-type: y mandatory;
@@ -83,13 +83,26 @@ nav .nav-links a {
   text-decoration: none;
   transition: 0.5s;
   font-size: 18px;
+  position: relative;
 }
 
-nav .nav-links a:hover {
-  color: #ed7e00;
-  text-decoration: underline;
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease, right 0.3s ease;
 }
 
+.nav-links a:hover::after {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
 
 .nav-links .dropdown {
   position: relative; 
@@ -99,7 +112,7 @@ nav .nav-links a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #0c0c0c94;
+  background-color: #030303d8;
   z-index: 10;
 
 }
@@ -242,6 +255,8 @@ nav .nav-links a:hover {
   box-sizing: border-box;
   padding-top: 10rem;
   gap: 2rem; 
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .image-stack-section {
@@ -249,8 +264,10 @@ nav .nav-links a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  padding-right: 2rem;
   gap: 1rem;
+
+  overflow: hidden;
 }
 
 .image-stack-section img {
@@ -268,7 +285,7 @@ nav .nav-links a:hover {
 .image-stack-section img:nth-child(2) {
   position: relative;
   top: -50px; 
-  left: 200px;
+  left: 175px;
   z-index: 1;
 }
 
@@ -278,6 +295,14 @@ nav .nav-links a:hover {
   left: -150px;
   z-index: 5;
 }
+
+.image-stack-section img:nth-child(4) {
+  position: relative;
+  top: -100px; 
+  left: 175px;
+  z-index: 3;
+}
+
 .city-description {
   flex: 1;
   display: flex;
