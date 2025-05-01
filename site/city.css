@@ -6,8 +6,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 6rem;
-  padding: 5rem;
-
+  margin-top: 5rem;
+  padding: 4rem;
+  background-color: #bd7880;
 }
 
 
@@ -26,6 +27,7 @@
 
 
 .image-container {
+  padding-top: 5rem;
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -79,6 +81,7 @@
   display: flex;
   flex-direction: column;
   align-items:center;
+  padding-top: 10rem;
   padding-right: 1rem;
   padding-left: 2rem;
   margin-bottom: 3rem;
