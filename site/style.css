@@ -30,6 +30,8 @@ body, html {
   color: white;
   overflow: hidden;
 
+
+
 }
 
 
@@ -348,7 +350,7 @@ nav .nav-links a {
   align-self: end;
   margin-right: 12rem;
   text-decoration: none;
-  box-shadow: 4px 6px 10px rgba(245, 222, 222, 0.961);
+
 }
 
 .city-btn:hover {

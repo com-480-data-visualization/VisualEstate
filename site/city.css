@@ -8,7 +8,7 @@
   gap: 6rem;
   margin-top: 5rem;
   padding: 4rem;
-  background-color: #bd7880;
+  background-color: #193060;;
 }
 
 
@@ -44,34 +44,52 @@
 
 
 
-
-
-
-
 /* For plot settings */ 
 
 
 .london_treemap_container {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex;  
     align-items:center;
     padding-right: 1rem;
     padding-left: 2rem;
-    margin-bottom: 3rem;
 }
 
 .fig_caption {
-  max-width: 800px;
-  text-align: top;
-  align-items: start;
-  margin: 0 auto;
-  padding: 20px;
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  /* Control height */
+  height: 50em; /* or use max-height if it's responsive */
+
+  margin: auto;
+  padding-top: 10rem;
+
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   line-height: 1.5rem;
 }
 
 
+.fig_caption h1 {
+  line-height: 2.5rem;
+  margin-top: 4rem 
+
+}
+
+.fig_caption h3 {
+  text-align: justify;
+  line-height: 1.75rem;
+  margin-top: auto; /* pushes it to the bottom */
+
+
+}
+
+.fig_caption p {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: justify;
+}
 .density_map {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -104,6 +122,4 @@
   padding-left: 3rem;
   padding-right: 3rem;
 }
-
-
 
