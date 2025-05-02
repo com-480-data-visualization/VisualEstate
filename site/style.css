@@ -40,7 +40,7 @@ body, html {
   box-sizing: border-box;
 }
 
-
+/* 
 nav {
   display: flex;
   align-items: center;
@@ -52,8 +52,26 @@ nav {
   top: 0;
   background-color: transparent;
   z-index: 998;
+} */
+
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  z-index: 998;
 }
 
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3em 5em 2em;
+  max-width: 1600px;
+  margin: 0 auto;     /* centers the inner content */
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+}
 
 
 nav .logo {

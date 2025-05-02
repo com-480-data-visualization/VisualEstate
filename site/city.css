@@ -1,125 +1,62 @@
+.city {
+  background-color: azure;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: relative; 
+  overflow: hidden;
+}
 
+.city-berlin {
+  background-image: url('./images/berlin/berlin111.jpg');
+}
 
+.city-london {
+  background-image: url('./images/london/london444.jpg');
+}
+
+.city-madrid {
+  background-image: url('./images/madrid/madrid222.png');
+}
+
+.city::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65); 
+  z-index: 0;
+}
 
 .city-infos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 6rem;
-  margin-top: 5rem;
-  padding: 4rem;
-  background-color: #193060;;
-}
-
-
-.city-infos h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  width: 75%;
-  text-align: left;
-}
-
-.city-infos p {
-  font-size: 20px;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-
-.image-container {
-  padding-top: 5rem;
+  position: relative;
+  z-index: 1;        
   display: flex;
   flex-direction: row;
+  justify-content: space-between;  
   gap: 2rem;
-}
-
-
-.image-container img {
-  width: 20rem;
-  height: auto;
-  max-width: 500px;
-  margin-right: 2rem;
-  
-}
-
-
-
-/* For plot settings */ 
-
-
-.london_treemap_container {
-    display: flex;  
-    align-items:center;
-    padding-right: 1rem;
-    padding-left: 2rem;
-}
-
-.fig_caption {
-  flex: 0 0 40%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-
-  /* Control height */
-  height: 50em; /* or use max-height if it's responsive */
-
-  margin: auto;
-  padding-top: 10rem;
-
-  border-radius: 10px;
-  line-height: 1.5rem;
-}
-
-
-.fig_caption h1 {
-  line-height: 2.5rem;
-  margin-top: 4rem 
-
-}
-
-.fig_caption h3 {
+  padding: 2rem 3rem 0;
   text-align: justify;
-  line-height: 1.75rem;
-  margin-top: auto; /* pushes it to the bottom */
-
-
+  color: white;
+  padding-top: 20rem;
 }
 
-.fig_caption p {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  text-align: justify;
-}
-.density_map {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 
-.london_scatter_plot_container {
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  padding-top: 10rem;
-  padding-right: 1rem;
-  padding-left: 2rem;
-  margin-bottom: 3rem;
-  
-}
-
-.fig_caption_scatter_plot{
+.city-infos h1{
+  padding-left: 2rem;;
+  flex: 0 0 30%;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4.5rem;
+  font-weight: bold;
   width: 100%;
-  text-align: top;
-  align-items: start;
-  margin: 2rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  line-height: 1.5rem;
+  text-align: left;
+  line-height: 5rem;
 }
 
-.fig_caption_scatter_plot p{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
 
+.city-infos p{
+  flex:1;
+  padding-top:1rem;
+  font-size: 20px;
+  line-height: 1.5em;
+
+}
