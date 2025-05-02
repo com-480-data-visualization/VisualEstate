@@ -4,20 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visual Estate</title>
+  <title>Madrid Real Estate</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../city.css">
+  <link rel="stylesheet" href="../madrid.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-
 <body>
-
-
-
-<nav>
+  <nav>
     <a href="../index.html" class="logo">Visual Estate</a>
-    <div class ="city_nav">Madrid</div>
-    
+    <div class="city_nav">Madrid</div>
     <div class="nav-links">
       <a href="../milestone_2.html" style="font-style: italic; color: rgb(169, 45, 45);">About Milestone 2</a>
       <a href="#">About</a>
@@ -33,20 +30,26 @@
     </div>
   </nav>
 
-
-
-
-  <div class='city-infos'>
+  <div class='city-infos fade-in' data-aos="fade-up">
     <h1>Madrid: where tradition meets transformation</h1>
-<p>Madrid is a city where deep-rooted tradition blends seamlessly with modern growth. Its real estate market mirrors this blend, offering a wide range of housing—from classic Spanish architecture in historic barrios to sleek new developments on the city’s outskirts.</p>
-<p>In central Madrid, areas like Salamanca and Chamberí feature elegant apartments and vibrant cultural life, while outer districts offer more affordable options and growing infrastructure. Each neighborhood brings its own character, contributing to Madrid’s rich and evolving urban landscape.</p>
+    <p>Madrid blends deep-rooted tradition with modern growth. Its real estate market offers classic Spanish architecture alongside sleek new developments. From Salamanca to Chamberí, discover how neighborhoods shape the city's dynamic housing scene.</p>
+  </div>
 
-</div>
+  <section class="map-section" data-aos="fade-up">
+    <iframe 
+      src="../assets/madrid_map.html"
+      class="map-iframe"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+    <div class="fig_caption">
+      <h2>Average Price by District</h2>
+      <p>This interactive heatmap shows the average property price per district in Madrid.</p>
+    </div>
+  </section>  
 
-  <img src="../images/madrid_heatmap.png" alt="Berlin" class="city-image" width="900" height="600">
-
-
-
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
+
 </html>

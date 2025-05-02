@@ -7,3 +7,5 @@ EDA/*.png
 
 
 .vscode/
+houses_Madrid.csv
+madrid-districts.geojson
