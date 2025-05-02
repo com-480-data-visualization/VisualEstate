@@ -13,6 +13,11 @@
   <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 
   <script src="../script.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
 </head>
 
 
@@ -21,13 +26,15 @@
 
 <body>
 
-  <nav style = "background-color: transparent;">
+  
+  <nav>
+    <div class = "nav-inner">
     <a href="../index.html" class="logo">Visual Estate</a>
-
     <div class="city_nav">London</div>
 
     <div class="nav-links">
       <a href="#">About</a>
+
       <div class="dropdown">
         <a>Cities ▾</a>
         <div class="dropdown-content">
@@ -38,13 +45,14 @@
       </div>
       <a href="#">Contact</a>
     </div>
+  </div>
   </nav>
 
 
- 
 
-    <div class="section" style = "background-color: #050b1e;">
 
+    <div class="section">
+      <div class="city city-london">
       <div class="city-infos">
         <h1>London: a city of layers</h1>
         <p>London is a city built on layers of history, culture, and modern ambition. Its real estate market reflects
@@ -57,199 +65,22 @@
           distinct
           personality, contributing to London's dynamic and diverse housing landscape.</p>
       </div>
+    </div>
+    </div>
       
 
-      <div class="image-container">
-        <img src="../images/london/london11.webp" alt="Image1" class="img1">
-        <img src="../images/london/london12.webp" alt="Image2" class="img2">
-        <img src="../images/london/london13.webp" alt="Image3" class="img3">
-      </div>
-
-    </div>
 
 
-    <div class="section" style = "background-color: #0d1a35;">
-      <style>
-        .london_density_map_container {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          height: 100vh;
-          padding: 10rem 2rem 3rem 2rem;
-        
-          box-sizing: border-box;
-        }
+ 
+
+   <div class = "section">
+
+   </div>
+
+
     
-        .london_density_map_text {
-          flex: 0 0 40%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          gap: 1rem;
-         
-          
-        }
-
-        .london_density_map_text h1 {
-          flex: 0 0 30%;
-          font-size: 2.5rem;
-          margin-bottom: 1rem;
-          color: #fff;
-          text-align: left;
-        }
-
-        .london_density_map_text p {
-          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          flex: 0 0 60%;
-          width: 100%;
-          font-size: 1.2rem;
-          color: #fff;
-        
-          line-height: 2;
-          text-align: justify;
-          font-size: larger;
-          
-          padding-left: 4rem;
-          padding-right: 4rem;
-
-        }
-    
-        .london_density_map_frame_container {
-          flex: 0 0 60%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          padding-bottom: 2rem;
-          align-items: center;
-        }
-    
-        .london_density_map_frame_container iframe {
-          width: 100%;
-          height: 100%;
-          border: none;
-          overflow: hidden;
-        
-        
-        }
-      </style>
-    
-      <div class="london_density_map_container">
-        <div class="london_density_map_text">
-          <h1> Where are located all the properties ? </h1>
-          <p> Our property heatmap reveals a striking pattern: Centraal and Northwest London is especially dense with listings, making it a hotspot for real estate activity. But it’s not all about the center — you’ll also spot emerging pockets of opportunity on the city’s outskirts, offering a perfect mix of urban energy and countryside calm. This rich blend sets the stage for a deep dive into the diverse character of London’s properties — from bustling boroughs to peaceful peripheries.
-            <br>
-            <br>
-            
-            💡 The heatmap reveals a strong concentration of properties in Soho, Marylebone, Westminster, Camden, and Chelsea — key central areas rich in history, culture, and market activity.
-
-          </p>
-        
-        </div>
-    
-        <div class="london_density_map_frame_container">
-          <iframe src="../assets/london_density_map.html"></iframe>
-        </div>
-      </div>
-    </div>
 
 
-
-    <div class="section" style = "background-color: #0d142d">
-
-      <div class="london_treemap_container">
-
-        <iframe src="../assets/london_treemap.html" width="820" height="700" frameborder="0" scrolling="yes"
-           style="margin-left: 2rem; margin-top: 10rem;"></iframe>
-
-        <div class="fig_caption">
-          <h1> Feature by feature: London Real Estate Unboxed </h1>
-          <p>This treemap visualizes the features of properties in London. Each rectangle represents a property, and its
-            size and color encode different attributes. Hover over a rectangle to see specific details.</p>
-        
-        
-            <h3>
-              But what’s even more valuable? Knowing exactly <strong>which neighborhoods offer the features you’re looking for</strong>. Want a 5-bedroom home but not sure where to start? We've got you. Let’s dive into a breakdown by neighborhood and uncover where your dream property is hiding.
-            </h3>
-          </div>
-
-
-      </div>
-    </div>
-
-
-
-    <div class="section" style = "background-color: #191a27;">
-      <div class="london_scatter_plot_container ">
-        <iframe src="../assets/london_scatter_plot_price_sqm.html" width="100%" height="450" frameborder="0"
-          scrolling="no" overflow="hidden" style="margin-left: 2rem;"></iframe>
-
-        <div class="fig_caption_scatter_plot">
-          <h2>What’s the Price of a View… or a Garage?</h2>
-          <p>This scatter plot shows the relationship between the price and the square meters of properties in London.
-            It will be implemented in the future to show the relationship between the price and the other features.
-            Note: some cleaning of the london neighbhood is needed to attribut more precise neighborhoods to the
-            properties.</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="section" style="background-color: #1d2034;">
-
-      <div class="london_scatter_plot_container">
-        <iframe src="../assets/london_boxplot_dropdown_price.html" width="100%" height="600" frameborder="0"
-          scrolling="no" overflow="hidden" style="margin-left: 2rem;"></iframe>
-
-        <div class="fig_caption_scatter_plot">
-          <h2>Price Distribution by Neighborhood</h2>
-          <p>This boxplot shows the distribution of prices in London neighborhoods. The boxes represent the
-            interquartile
-            range, while the lines extend to show the rest of the distribution. Outliers are plotted as individual
-            points.</p>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="section" style="background-color: #151723;">
-
-      <div class="london_scatter_plot_container">
-        <iframe src="../assets/london_boxplot_price_neighborhood.html" width="100%" height="600" frameborder="0"
-          scrolling="no" overflow="hidden" style="margin-left: 2rem;"></iframe>
-
-        <div class="fig_caption_scatter_plot">
-          
-          <p>This boxplot shows the distribution of prices in London neighborhoods. The boxes represent the
-            interquartile
-            range, while the lines extend to show the rest of the distribution. Outliers are plotted as individual
-            points.</p>
-        </div>
-
-      </div>
-    </div>
-
-
-
-    <div class="section" style="background-color: #14151e;">
-
-      <div class="london_scatter_plot_container">
-        <iframe src="../assets/london_bar_plot_allneigh.html" width="100%" height="600" frameborder="0"
-          scrolling="no" overflow="hidden" style="margin-left: 2rem;"></iframe>
-
-        <div class="fig_caption_scatter_plot">
-          <h2>Price Distribution by Neighborhood</h2>
-          <p>This boxplot shows the distribution of prices in London neighborhoods. The boxes represent the
-            interquartile
-            range, while the lines extend to show the rest of the distribution. Outliers are plotted as individual
-            points.</p>
-        </div>
-
-      </div>
-    </div>
-
-
-  </div>
 
 
 </body>
