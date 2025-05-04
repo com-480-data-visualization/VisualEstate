@@ -16,7 +16,7 @@
 }
 
 .city-madrid {
-  background-image: url('./images/madrid/madrid222.png');
+  background-image: url('./images/madrid/madrid111.jpg');
 }
 
 .city::before {
@@ -34,7 +34,7 @@
   flex-direction: row;
   justify-content: space-between;  
   gap: 2rem;
-  padding: 2rem 3rem 0;
+  padding: 5rem 3rem 0;
   text-align: justify;
   color: white;
   padding-top: 20rem;
@@ -49,13 +49,13 @@
   font-weight: bold;
   width: 100%;
   text-align: left;
-  line-height: 5rem;
+  line-height: 4rem;
 }
 
 
 .city-infos p{
   flex:1;
-  padding-top:1rem;
+  padding-top:3rem;
   font-size: 20px;
   line-height: 1.5em;
 
