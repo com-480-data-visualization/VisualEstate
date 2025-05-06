@@ -60,3 +60,65 @@
   line-height: 1.5em;
 
 }
+
+
+
+
+.london_density_map_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: justify;
+  height:100vh;
+  padding-top: 6rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+ 
+
+}
+
+.london_density_map_frame_container {
+  flex: 0 0 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+
+.london_density_map_frame_container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+.london_density_map_text {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 3rem;
+ 
+  
+}
+
+.london_density_map_text h1 {
+  flex: 0 0 30%;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+  padding-left:2rem;
+
+}
+
+.london_density_map_text p {
+  flex: 1;
+  font-size: 1.2rem;
+  text-align: justify;
+
+  
+
+}
