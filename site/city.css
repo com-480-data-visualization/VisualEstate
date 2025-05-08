@@ -3,7 +3,7 @@
   height: 100%;
   width: 100%;
   background-size: cover;
-  position: relative; 
+  position: relative;
   overflow: hidden;
 }
 
@@ -22,17 +22,20 @@
 .city::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.65); 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
   z-index: 0;
 }
 
 .city-infos {
   position: relative;
-  z-index: 1;        
+  z-index: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
+  justify-content: space-between;
   gap: 2rem;
   padding: 5rem 3rem 0;
   text-align: justify;
@@ -41,8 +44,9 @@
 }
 
 
-.city-infos h1{
-  padding-left: 2rem;;
+.city-infos h1 {
+  padding-left: 2rem;
+  ;
   flex: 0 0 30%;
   font-family: 'Cormorant Garamond', serif;
   font-size: 4.5rem;
@@ -53,9 +57,9 @@
 }
 
 
-.city-infos p{
-  flex:1;
-  padding-top:3rem;
+.city-infos p {
+  flex: 1;
+  padding-top: 3rem;
   font-size: 20px;
   line-height: 1.5em;
 
@@ -64,16 +68,16 @@
 
 
 
-.london_density_map_container{
+.london_density_map_container {
   display: flex;
   flex-direction: column;
   justify-content: justify;
-  height:100vh;
+  height: 100vh;
   padding-top: 6rem;
   padding-right: 3rem;
   padding-left: 3rem;
   padding-bottom: 2rem;
- 
+
 
 }
 
@@ -100,17 +104,19 @@
   flex-direction: row;
   justify-content: space-around;
   gap: 3rem;
- 
-  
+
+
 }
 
 .london_density_map_text h1 {
+
   flex: 0 0 30%;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 1rem;
   color: #fff;
   text-align: left;
-  padding-left:2rem;
+  padding-left: 2rem;
 
 }
 
@@ -119,6 +125,311 @@
   font-size: 1.2rem;
   text-align: justify;
 
-  
 
+
+}
+
+
+.london_treemap_container {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  margin-top: 8rem;
+  width: 100%;
+}
+
+
+.london_treemap_container iframe {
+  flex: 0 0 50%;
+  width: 100%;
+  height: 100%;
+  padding-left: 2rem;
+  padding-top: 2rem;
+
+}
+
+
+.london_treemap_text {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+
+.london_treemap_text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding-left: 2rem;
+  padding-top: 2rem;
+
+}
+
+.london_treemap_text p {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.london-barplot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  margin-top: 8rem;
+  width: 100%;
+
+}
+
+.london-barplot-container iframe {
+  flex: 0 0 45%;
+  width: 100%;
+  height: 100%;
+  padding-left: 2rem;
+
+}
+
+.london-barplot-text {
+  flex: 0 0 55%;
+  display: flex;
+  flex-direction: row;
+
+  padding-right: 2rem;
+  gap: 2rem;
+}
+
+.london-barplot-text h1 {
+  flex: 0 0 35%;
+  font-size: 2.5rem;
+  text-align: left;
+  padding-left: 5rem;
+  padding-top: 2rem;
+
+}
+
+
+.feature-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-top: 3rem;
+  color: white;
+  font-size: 1rem;
+
+}
+
+.feature-box {
+
+  padding: 0.5rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+.feature-box strong {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: left;
+  /* aligns the big title to the left */
+}
+
+
+
+ul {
+  text-align: justify;
+  list-style: none;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+.price-distribution-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  margin-top: 8rem;
+  width: 100%;
+
+}
+
+.price-distribution-features iframe {
+  flex: 0 0 55%;
+  width: 100%;
+  height: 100%;
+  padding-left: 2rem;
+
+}
+
+.price-distribution-features-text {
+  flex: 0 0 55%;
+  display: flex;
+  flex-direction: row;
+
+  padding-right: 2rem;
+  gap: 2rem;
+}
+
+.price-distribution-features-text h1 {
+  flex: 0 0 35%;
+  font-size: 2.5rem;
+  text-align: left;
+  padding-left: 4rem;
+
+
+}
+
+.price-distribution-features-text p {
+
+  flex: 1;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding-left: 2rem;
+  padding-top: 1rem;
+
+}
+
+
+
+
+
+
+
+.london-boxplot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  margin-top: 8rem;
+  width: 100%;
+
+}
+
+.london-boxplot iframe {
+  flex: 0 0 60%;
+  width: 100%;
+  height: 100%;
+  padding-left: 4rem;
+
+}
+
+.london-boxplot-text {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: row;
+  padding-right: 2rem;
+  gap: 2rem;
+
+}
+
+.london-boxplot-text h1 {
+  flex: 0 0 35%;
+  font-size: 2.5rem;
+  text-align: left;
+  padding-left: 5rem;
+
+}
+
+.london-boxplot-text p {
+  flex: 1;
+  font-size: 1.2rem;
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+
+
+
+
+.london-scatter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  margin-top: 8rem;
+  width: 100%;
+}
+
+.london-scatter iframe {
+  flex: 0 0 55%;
+  width: 100%;
+  height: 100%;
+  padding-left: 4rem;
+}
+
+.london-scatter-plot-text {
+  flex: 0 0 55%;
+  display: flex;
+  flex-direction: row;
+  padding-right: 2rem;
+  gap: 2rem;
+}
+
+.london-scatter-plot-text h1 {
+
+  flex: 0 0 35%;
+  font-size: 2.5rem;
+  text-align: left;
+  padding-left: 4rem;
+}
+
+.london-scatter-plot-text p {
+  flex: 1;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding-left: 2rem;
+}
+
+
+
+
+
+.london-diagram {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  margin-top: 8rem;
+  width: 100%;
+}
+
+.london-diagram iframe {
+  flex: 0 0 50%;
+  width: 100%;
+  height: 100%;
+  padding-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.london-diagram-text {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-right: 2rem;
+  gap: 2rem;
+}
+
+.london-diagram-text h1 {
+
+  flex: 0 0 35%;
+  font-size: 2.5rem;
+  text-align: left;
+  padding-left: 4rem;
+}
+
+.llondon-diagram-text p {
+  flex: 1;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding-left: 2rem;
 }
