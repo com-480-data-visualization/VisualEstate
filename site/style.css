@@ -40,20 +40,11 @@ body, html {
   box-sizing: border-box;
 }
 
-/* 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;;
-  padding: 3em 5em 2em;
-  position: fixed;
-  width: 100%;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
-  top: 0;
-  background-color: transparent;
-  z-index: 998;
-} */
-
+.emphasis {
+  display: inline-block;
+  transform: scale(0.95);
+  opacity: 0;
+}
 
 nav {
   position: fixed;
@@ -65,12 +56,13 @@ nav {
 
 .nav-inner {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   padding: 3em 5em 2em;
   max-width: 1600px;
   margin: 0 auto;     /* centers the inner content */
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+  
 }
 
 
@@ -106,6 +98,14 @@ nav .nav-links a {
   position: relative;
 }
 
+.nav-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: white;
+  width: 0%; /* we'll animate this to 100% */
+}
 
 .nav-links a::after {
   content: "";
@@ -274,7 +274,7 @@ nav .nav-links a {
   height: 100vh;
   box-sizing: border-box;
   padding-top: 10rem;
-  gap: 2rem; 
+  gap: 1rem; 
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -286,7 +286,6 @@ nav .nav-links a {
   align-items: center;
   padding-right: 2rem;
   gap: 1rem;
-
   overflow: hidden;
 }
 
@@ -327,7 +326,7 @@ nav .nav-links a {
   flex: 1;
   display: flex;
   flex-direction: column;   
-  justify-content: center;
+  justify-content: justify;
   padding: 2rem;
   font-size: x-large;
   line-height: 2.5rem;
@@ -335,15 +334,19 @@ nav .nav-links a {
 }
 
 .city-description h1 {
+  flex : 0 0 40%;
   font-size: 3rem;
   font-weight: bold;
   width: 100%;
+  text-align: left;
+
   line-height: 3.5rem;
 }
 
 .city-description p {
+  flex: 1;
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
   text-align: justify;
 }
 
@@ -377,3 +380,121 @@ nav .nav-links a {
 
 
 
+.final-container{
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+
+.final-text {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 10rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: justify;
+  
+}
+
+
+.final-image {
+  flex: 0 0 40%;
+  height: 100vh;
+  width: 100%;
+}
+
+.contact-divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  flex: 1;
+  min-width: 200px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-card h2 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.vote-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  align-items: flex-start;
+}
+
+.vote-left {
+  flex: 0 0 50%;
+  min-width: 250px;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.vote-right {
+  flex: 1;
+
+  padding: 1.5rem;
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 10px;
+}
+
+.about-container {
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+  padding-left: 2rem;
+}
+.about-container p {
+  flex: 1;
+  font-size: 1.5rem;
+  text-align: justify;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  line-height: 2rem;
+}
+
+
+.organization {
+ padding-left: 2rem;
+padding-right: 2rem;
+
+
+}

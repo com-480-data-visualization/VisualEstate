@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visual Estate</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="'citystylesheet" hred="city.css">
+
 </html>
 
 
@@ -14,30 +14,44 @@
 <body>
 
 
-
-    <nav>
-        <a href="index.html" class="logo">Visual Estate</a>
-        <img src="images/logoVE.png" alt="logo" width="100" height="100">
-
-        <div class="nav-links">
-          <a href="#">About</a>
-          <a href="#">Cities</a>
-          <a href="#">Contact</a>
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">Visual Estate</div>
+      <img src="images/logoVE.png" alt="logo" width="160" height="160">
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <div class="dropdown">
+          <a>Cities ▾</a>
+          <div class="dropdown-content">
+            <a href="cities/berlin.html">Berlin</a>
+            <a href="cities/london.html">London</a>
+            <a href="cities/madrid.html">Madrid</a>
+          </div>
         </div>
-      </nav>
-    
-
-<div class="container"> 
-        <div class="title">How can this site help you?</div>
-        <div class="description">
-          VisualEstate helps you explore and understand real estate trends across major European cities like Berlin, London, and Madrid. 
-          Through interactive maps and data visualizations, you can compare property prices, spot market patterns, and make more informed decisions — whether you're a buyer, investor, or just curious about urban development.
-    
-          To add : dataset cooming from link of the git, more details about the porject and the different vizualisation that we can find on the website and why we chose them.
-
-        
-        </div>
+        <a href="#">Contact</a>
       </div>
+      <div class="nav-underline"></div>
+    </div>
+  </nav>
+    
+
+
+  <div class= "about-container">
+
+    <h1>About Visual Estate</h1>
+<p>
+  <strong>Visual Estate</strong> is a project developed as part of the COM-480 Data Visualization course at EPFL, within the Master in Data Science program. The topic and dataset were freely chosen, allowing us to explore real estate trends across European cities. Our process involved exploratory data analysis (EDA), insightful storytelling, and the design of compelling visualizations. <br><br>
+  You can explore our code and datasets on our <a href="" target="_blank" style="color: #C5A880;">GitHub repository</a>.
+</p>
+  </div>
+  <div class="contact-divider"></div>
+  <div class = "organization">
+    <h1>Organization</h1>
+    <br>
+    <p>Visual Estate is a project developed by a team of passionate individuals who are dedicated to making the real estate process easier for everyone. Our team consists of developers, designers, and real estate experts who work together to provide the best possible experience for our users.</p>
+  </div>
+
+
 
 
 
