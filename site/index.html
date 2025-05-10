@@ -23,15 +23,13 @@
   <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/build/three.min.js"></script>
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="images\iconVE.png">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/build/three.min.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/build/three.min.js"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
-  
 
 
 
@@ -43,6 +41,25 @@
 </head>
 
 <body>
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">Visual Estate</div>
+      <img src="images/logoVE.png" alt="logo" width="160" height="160">
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <div class="dropdown">
+          <a>Cities ▾</a>
+          <div class="dropdown-content">
+            <a href="cities/berlin.html">Berlin</a>
+            <a href="cities/london.html">London</a>
+            <a href="cities/madrid.html">Madrid</a>
+          </div>
+        </div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-underline"></div>
+    </div>
+  </nav>
   <nav>
     <div class="nav-inner">
       <div class="logo">Visual Estate</div>
@@ -76,8 +93,21 @@
       </div>
     </div>
   </div>
+  <div class="section" id="home">
+    <div class="intro">
+      <div class="intro-text">
+        <h1>VISUAL ESTATE</h1>
+        <p>
+          We don’t just <i>show you</i> real estate data, we give you
+          <span class="emphasis"><strong>insight</strong></span> to help you travel
+          <span class="emphasis"><strong>smarter</strong></span> or invest
+          <span class="emphasis"><strong>wiser</strong></span>.
+        </p>
+      </div>
+    </div>
+  </div>
 
-  <div class="section" style="background-color: #111417;">
+  <div class="section" style="background-color: #10171bb0;">
     <div class="earth">
       <div class="earth-text-left">
         <p>
@@ -111,37 +141,203 @@
       </div>
     </div>
   </div>
+    <div class="counters">
+      <div class="counter">
+        <h1><span data-count="3">0</span></h1>
+        <p>Cities</p>
+      </div>
+      <div class="counter">
+        <h1><span data-count="30">0</span></h1>
+        <p>Features available</p>
+      </div>
+      <div class="counter">
+        <h1><span data-count="50">0</span></h1>
+        <p>Neighborhoods</p>
+      </div>
+    </div>
+  </div>
 
-    <div class="section">
-        <div class="citycard">
-      
-          <div class="image-stack-section">
-            <img src="images/berlin/berlin1.jpeg" class="stack-img img1">
-            <img src="images/berlin/berlin2.jpg" class="stack-img img2">
-            <img src="images/berlin/berlin5.png" class="stack-img img3">
-        
-          </div>
+
+
+  <div class="section" style="background-color: #a9a9a9;">
+    <div class="citycard">
+
+      <div class="image-stack-section">
+        <img src="images/berlin/berlin1.jpeg" class="stack-img img1">
+        <img src="images/berlin/berlin2.jpg" class="stack-img img2">
+        <img src="images/berlin/berlin5.png" class="stack-img img3">
+
+      </div>
+
+      <div class="city-description">
+        <div class="text-row">
+          <h1>Berlin calling — are you in?</h1>
+          <p>
+            <strong>Berlin is a city that never sleeps</strong>, and neither do we! With its <strong>dynamic
+              neighborhoods</strong> and <strong>unique charm</strong>, it’s the perfect place to <strong>start a new
+              life</strong> — or <strong>make a smart investment</strong>.
+          </p>
+        </div>
+        <a class="city-btn" href="./cities/berlin.html" style="background-color: #2d522d;">Explore More</a>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class="section" style="background-color: #181818;">
+    <div class="citycard">
+
+
+
+      <div class="city-description">
+        <div class="text-row">
+          <h1>London? Good Idea!</h1>
+          <p>
+            <strong>London is timeless and ever-evolving</strong> — a city where <strong>historic charm</strong> meets
+            <strong>modern luxury</strong>. From <strong>Mayfair townhouses</strong> to <strong>riverside
+              penthouses</strong>, it’s the perfect place to <strong>invest</strong>, <strong>indulge</strong>, or
+            <strong>start your next chapter</strong>.
+          </p>
+        </div>
+        <a class="city-btn" href="./cities/london.html" style='background-color: #621211;'>Explore More</a>
+      </div>
+
+      <div class="image-stack-section">
+        <img src="images/london/london555.jpg" class="stack-img img1">
+        <img src="images/london/london222.jpg" class="stack-img img2">
+        <img src="images/london/lonodn333.webp" class="stack-img img3">
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <div class="section" style="background-color: #a9a9a9;">
+    <div class="citycard fade-in-up">
+
+      <div class="image-stack-section">
+        <img src="images/madrid/madrid111.jpg" class="stack-img img1">
+        <img src="images/madrid/madrid333.jpg" class="stack-img img2">
+        <img src="images/madrid/madrid444.avif" class="stack-img img3">
+
+      </div>
+
+      <div class="city-description">
+        <div class="text-row">
+          <h1>Madrid — the city of dreams</h1>
+          <p>
+            <strong>Madrid is a city that never sleeps</strong>, and neither do we! With its <strong>dynamic
+              neighborhoods</strong> and <strong>unique charm</strong>, it’s the perfect place to <strong>start a new
+              life</strong> — or <strong>make a smart investment</strong>.
+          </p>
+        </div>
+        <a class="city-btn" href="./cities/madrid.html" style='background-color: #621211;'>Explore More</a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="section" style="background-color: #000000;">
+    <div class="final-container fade-in-up" id = "contact">
+
+
+      <div class="final-text">
+        <h1>Want more ? We too !</h1>
+        <div class="vote-row">
+          <div class="vote-left">
           
-          <div class="city-description">
-            <div class="text-row">
-              <h1>Berlin calling — are you in?</h1>
-              <p>
-                Berlin is a city that never sleeps, and neither do we! With its rich history, vibrant culture, and diverse neighborhoods...
-              </p>
-            </div>
-            <a class="city-btn" href="./cities/berlin.html"">Explore More</a>
+            <p>We are working on new <strong>cities</strong> and features to make <strong>your experience even better</strong> all around the world!</p>
+            <p>We would love to hear <strong> your thoughts </strong> on which city you would like to see next !</p>
           </div>
+        
+          <form id="voteForm" class="vote-right" style="background-color: #181818;">
+            <p style="font-weight: bold; margin-bottom: 1rem;">Select a city or suggest your own:</p>
+        
+            <label style="display: block; margin-bottom: 0.8rem;">
+              <input type="radio" name="city" value="Paris" style="margin-right: 10px;"> Paris
+            </label>
+            <label style="display: block; margin-bottom: 0.8rem;">
+              <input type="radio" name="city" value="New York" style="margin-right: 10px;"> New York
+            </label>
+            <label style="display: block; margin-bottom: 0.8rem;">
+              <input type="radio" name="city" value="Tokyo" style="margin-right: 10px;"> Tokyo
+            </label>
+            <label style="display: block; margin-bottom: 0.8rem;">
+              <input type="radio" name="city" value="Rome" style="margin-right: 10px;"> Rome
+            </label>
+        
+            <label for="customCity" style="display: block; margin-top: 1.5rem; font-weight: bold;">Or type your own:</label>
+            <input type="text" id="customCity" name="customCity" placeholder="e.g. Lisbon"
+              style="width: 100%; padding: 10px; margin: 10px 0 20px 0; border-radius: 6px; border: none; background-color: #333; color: white;">
+        
+            <button type="submit"
+              style="padding: 10px 20px; background-color: #bdbdbd; color: #2e452e; font-weight: bold; border: none; border-radius: 6px; cursor: pointer;">
+              Send
+            </button>
+        
+            <p id="voteResult" style="margin-top: 10px; color: #ccc;"></p>
+          </form>
+        </div>
+    
+        <div class="contact-divider"></div>
 
-       
+        <div class="contact">
+          <h1>CONTACT</h1>
+          <p>We are always happy to hear from you! Whether you have a question, feedback, or just want to say hi, feel
+            free to reach out to us.</p>
+
+          <div class="contact-info">
+            <div class="contact-card">
+              <h2>Élise Boyer </h2>
+              <a href= "mailto:elise.boyer@epfl.ch" style="color: white; text-decoration: none;">elise.boyer@epfl.ch</a>
+
+              
+            </div>
+            <div class="contact-card">
+              <h2>Gauthier</h2>
+            
+            </div>
+            <div class="contact-card">
+              <h2>Charles</h2>
+              <p></p>
+            </div>
+          </div>
         </div>
       </div>
 
-    
-    <div class = "section"> 
-        <h1>London? Good Choice!</h1>
+  
+      <div class="final-image">
+        <img src="images/final.jpg" alt="logo" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
     </div>
-   
-    
+  </div>
+
+  <script>
+    document.getElementById("voteForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const selected = document.querySelector('input[name="city"]:checked');
+      const custom = document.getElementById("customCity").value.trim();
+      const result = document.getElementById("voteResult");
+  
+      if (custom) {
+        result.textContent = `Thanks for suggesting ${custom}, we’ll consider it!`;
+      } else if (selected) {
+        result.textContent = `Thanks for voting for ${selected.value}!`;
+      } else {
+        result.textContent = "Please select or enter a city before submitting.";
+      }
+    });
+  </script>
+
+
 </body>
 
 </html>
