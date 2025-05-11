@@ -59,9 +59,12 @@ nav {
   justify-content: space-between;
   padding: 3em 5em 2em;
   max-width: 1600px;
-  margin: 0 auto;     
+  margin: 0 auto; 
+  border-bottom: none; /* Remove if already set */    
   
 }
+
+
 
 
 nav .logo {
@@ -96,13 +99,16 @@ nav .nav-links a {
   position: relative;
 }
 
+
+
 .nav-underline {
   position: absolute;
   bottom: 0;
   left: 0;
   height: 1px;
   background-color: white;
-  width: 0%; /* we'll animate this to 100% */
+  width: 100%; /* Will animate to 100% */
+  z-index: 1;
 }
 
 .nav-links a::after {
