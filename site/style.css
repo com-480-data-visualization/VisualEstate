@@ -30,8 +30,6 @@ body, html {
   color: white;
   overflow: hidden;
 
-
-
 }
 
 
@@ -61,7 +59,7 @@ nav {
   justify-content: space-between;
   padding: 3em 5em 2em;
   max-width: 1600px;
-  margin: 0 auto;     /* centers the inner content */
+  margin: 0 auto;     
   
 }
 
@@ -262,93 +260,6 @@ nav .nav-links a {
 }
 
 
-
-/* 
-
-.citycard {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
-  padding-top: 10rem;
-  gap: 1rem; 
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.image-stack-section {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-right: 2rem;
-  gap: 1rem;
-  overflow: hidden;
-}
-
-.image-stack-section img {
-  width: 300px; 
-  height: auto;
-}
-
-.image-stack-section img:nth-child(1) {
-  position: relative;
-  top: 20px;
-  left: -150px;
-  z-index: 2;
-}
-
-.image-stack-section img:nth-child(2) {
-  position: relative;
-  top: -50px; 
-  left: 175px;
-  z-index: 1;
-}
-
-.image-stack-section img:nth-child(3) {
-  position: relative;
-  top: -100px; 
-  left: -150px;
-  z-index: 5;
-}
-
-.image-stack-section img:nth-child(4) {
-  position: relative;
-  top: -100px; 
-  left: 175px;
-  z-index: 3;
-}
-
-.city-description {
-  flex: 1;
-  display: flex;
-  flex-direction: column;   
-  justify-content: justify;
-  padding: 2rem;
-  font-size: x-large;
-  line-height: 2.5rem;
-  gap: 1.5rem;
-}
-
-.city-description h1 {
-  flex : 0 0 40%;
-  font-size: 3rem;
-  font-weight: bold;
-  width: 100%;
-  text-align: left;
-
-  line-height: 3.5rem;
-}
-
-.city-description p {
-  flex: 1;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: justify;
-} */
 
 
 .city-section {
