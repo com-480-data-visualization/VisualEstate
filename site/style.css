@@ -263,7 +263,7 @@ nav .nav-links a {
 
 
 
-
+/* 
 
 .citycard {
   display: flex;
@@ -348,13 +348,63 @@ nav .nav-links a {
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: justify;
+} */
+
+
+.city-section {
+  display: flex;
+  flex-direction: row;
+
 }
 
-.text-row {
-  display: flex;               
-  flex-direction: row;
-  gap: 2rem;
+.city-img {
+  width: 100%;
+  height: 100vh;
+  flex: 0 0 40%;
 }
+
+
+
+.city-text{
+  flex: 0 0 60%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 25rem;
+  gap: 0em;
+ 
+
+}
+
+
+.city-text h1 {
+  flex : 0 0 40%;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  line-height: 3.5rem;
+  padding-left: 3rem;
+ 
+  
+}
+
+.city-text p {
+  flex: 1;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: justify;
+  margin-bottom: 3rem;
+  padding-right: 4rem;
+ 
+}
+
+
+
+
+
+
+
 
 .city-btn {
   font-size: 1.2rem;
