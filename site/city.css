@@ -438,3 +438,41 @@ ul {
 
 
 
+
+
+
+
+
+/* MADRID */
+
+.madrid-map {
+  height: 100vh;
+  width: 100%;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.maps {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+
+}
+
+
+.maps-legend {
+  flex: 0 0 50%;
+  flex-direction: column;
+  text-align: justify;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+ 
+}
