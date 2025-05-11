@@ -1,71 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Visual Estate</title>
+  
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../city.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <link rel="icon" type="image/png" href="..\images\iconVE.png">
 
+  <script src="https://d3js.org/d3.v7.min.js"></script>
 
+</head>
 
 
 
 <body>
 
-
-
   <nav>
     <div class = "nav-inner">
-    <a href="../index.html" class="logo">Visual Estate</a>
-    <div class="city_nav">Berlin</div>
 
-    <div class="nav-links">
-      <a href="#">About</a>
+      <a href="../index.html" class="logo">Visual Estate</a>
 
-      <div class="dropdown">
-        <a>Cities ▾</a>
-        <div class="dropdown-content">
-          <a href="berlin.html">Berlin</a>
-          <a href="london.html">London</a>
-          <a href="madrid.html">Madrid</a>
+      <div class="city_nav">Berlin</div>
+
+      <div class="nav-links">
+        <a href="#">About</a>
+        <div class="dropdown">
+          <a>Cities ▾</a>
+          <div class="dropdown-content">
+            <a href="berlin.html">Berlin</a>
+            <a href="london.html">London</a>
+            <a href="madrid.html">Madrid</a>
+          </div>
         </div>
+        <a href="#">Contact</a>
       </div>
-      <a href="#">Contact</a>
+
     </div>
-  </div>
   </nav>
 
 
   <div class="section">
+    <div class="city city-berlin">
+      <div class = 'city-infos'>
 
-  <div class="city city-berlin">
-  <div class = 'city-infos'>
+        <h1>Berlin: the city of contrasts</h1>
+        <p>Berlin is a city of contrasts, where history meets modernity. The real estate market reflects this duality, with
+          a mix of historic buildings and contemporary developments. The average property prices vary significantly across
+          different districts, influenced by factors such as location, amenities, and historical significance.</p>
+        <p>In the heart of Berlin, you can find stunning apartments in historic buildings, while the outskirts offer more
+          affordable options. The city's diverse neighborhoods each have their own unique character, making it an exciting
+          place to explore and invest in real estate.</p>
 
-    <h1>Berlin: the city of contrasts</h1>
-    <p>Berlin is a city of contrasts, where history meets modernity. The real estate market reflects this duality, with
-      a mix of historic buildings and contemporary developments. The average property prices vary significantly across
-      different districts, influenced by factors such as location, amenities, and historical significance.</p>
-    <p>In the heart of Berlin, you can find stunning apartments in historic buildings, while the outskirts offer more
-      affordable options. The city's diverse neighborhoods each have their own unique character, making it an exciting
-      place to explore and invest in real estate.</p>
-
+      </div>
+    </div>
   </div>
+
+
+  <div id="scatter" class = "section"> 
+    <h4>Surface vs. Price by Neighborhood</h4>
   </div>
-</div>
-
-<div class = "section"> 
-
-</div>
 
 
+  <div id="feature-based-bar-plot" class = "section"> 
+    <div id="feature-based-bar-plot-container">
+      <div id="feature-based-bar-plot-filters">
+          
+        <label>Rooms:</label><br/>
+        <select id="rooms-select">
+          <option value="all">Any</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5+">&ge; 5</option>
+        </select>
+        <br/><br/>
+        <label>Price Range (€):</label><br/>
+        <!-- <div class="range_container">
+        <div class="sliders_control"> -->
+        <span id="min-price-value">30,000</span>
+        <input type="range" id="min-price-slider" min="30000" max="15900000" step="10000" value="30000">
+        <input type="range" id="max-price-slider" min="30000" max="15900000" step="10000" value="15900000">
+        <span id="max-price-value">15,900,000</span>
+        <!-- </div> -->
+        <br/><br/>
+        <label>Size Range (m²):</label><br/>
+        <span id="min-size-value">10</span>
+        <input type="range" id="min-size-slider" min="10" max="970" step="10" value="10">
+        <input type="range" id="max-size-slider" min="10" max="970" step="10" value="970">
+        <span id="max-size-value">970</span>
+        <!-- </div> -->
+      </div>
 
+      <div id="feature-based-bar-plot-chart"></div>
+
+    </div>
+
+    <h4>Feature-based bar plot</h4>
+  </div>
+
+
+  <div id="map" class = "section"> 
+    <h4>Chloropleth map</h4>
+  </div>
+
+  <script src="./berlin_main.js" type="module"></script>
 
 </body>
 

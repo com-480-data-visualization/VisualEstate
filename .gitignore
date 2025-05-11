@@ -1,5 +1,8 @@
-# Ignore dataset 
-data/
+# Ignore datasets 
+data/berlin_houses_apr2023.csv
+data/house_price_index_2005-2021.csv
+data/madrid_houses_oct2022.csv
+data/Postcode_BerlinDistricts.csv
 config.js
 
 # Ignore image from EDA
