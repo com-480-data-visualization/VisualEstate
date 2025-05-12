@@ -503,3 +503,236 @@ ul {
   padding-left: 3rem;
  
 }
+
+
+
+.energy-heating {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 9rem;
+  padding-left: 2rem;
+  padding-right: 5rem;
+
+  gap: 2rem;
+
+}
+
+.iframes {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2rem;
+  justify-content: space-evenly;
+
+}
+
+.energy-heating-text {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  line-height: 1.5rem;
+ 
+
+}
+
+
+
+
+
+
+.iframes iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+
+.energy-pie-chart {
+
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: 100vh;
+  padding-top: 9rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+}
+
+.energy-pie-chart iframe {
+  flex: 0 0 50%;
+  width: 100%;
+  height: 100%;
+  padding-left: 2rem;
+ 
+}
+
+
+
+.pie-chart-text {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+
+
+
+
+
+.berlin-heatmap {
+
+  width: 100%;
+  height: 100vh;
+  display: flex;             
+  flex-direction: row;         
+  padding-top: 5rem;
+  gap: 2rem;                   
+}
+
+.heatmap-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+
+}
+
+#map {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;               
+}
+
+
+.berlin-scatter {
+  width: 100%;
+  height: 100vh;
+  display: flex;             
+  flex-direction: column;         
+  padding-top: 10rem;
+  gap: 2rem;                   
+}
+
+.berlin-scatter iframe {
+  flex: 0 0 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+             
+}
+
+.scatter-text {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 5rem;
+
+  gap: 2rem;
+
+}
+
+.scatter-text h1 {
+  flex : 0 0 25%;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+  padding-left: 2rem;
+
+}
+
+.scatter-text p {
+  flex: 1;
+  text-align: justify;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+
+}
+
+
+
+
+.berlin-scatter-2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;             
+  flex-direction: column;         
+  padding-top: 10rem;
+  gap: 2rem;                   
+}
+
+.berlin-scatter-2 iframe {
+  flex: 0 0 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+             
+}
+
+.scatter-text-2 {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 5rem;
+
+  gap: 2rem;
+
+}
+
+.scatter-text-2 h1 {
+  flex : 0 0 25%;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+  padding-left: 2rem;
+
+}
+
+.scatter-text-2 p {
+  flex: 1;
+  text-align: justify;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+}
+
+
+.berlin-scatter-3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;             
+  flex-direction: column;         
+  padding-top: 10rem;
+  gap: 2rem;       
+  
+}
+
+.berlin-scatter-3 iframe {
+  flex: 0 0 40%;
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;;
+             
+}
