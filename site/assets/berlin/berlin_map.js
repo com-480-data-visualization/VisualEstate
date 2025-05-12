@@ -6,10 +6,9 @@ export function drawMap(geoData, districtData) {
         .attr("width", width)
         .attr("height", height);
 
+    
     const projection = d3.geoMercator()
-        .center([13.4, 52.52]) // Berlin approx center
-        .scale(50000)
-        .translate([width / 2, height / 2]);
+    .fitSize([width, height], geoData);  
 
     const path = d3.geoPath().projection(projection);
     const tooltip = d3.select("#map").append("div").attr("class", "berlin-tooltip");
@@ -35,6 +34,7 @@ export function drawMap(geoData, districtData) {
         .attr("fill", d => {
             const price = priceMap.get(d.properties.Gemeinde_name);
             return price ? colorScale(price) : "#ccc";
+            
         })
         .attr("d", path)
         .on("mouseover", function(event, d) {
@@ -46,4 +46,7 @@ export function drawMap(geoData, districtData) {
                 .style("top", (event.pageY - 20) + "px");
         })
         .on("mouseout", () => tooltip.transition().duration(200).style("opacity", 0));
+
+        
 }
+

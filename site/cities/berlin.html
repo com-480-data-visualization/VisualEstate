@@ -6,14 +6,16 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>Visual Estate</title>
-  
+
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../city.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <link rel="icon" type="image/png" href="..\images\iconVE.png">
 
@@ -25,11 +27,10 @@
 
 <body>
 
+
   <nav>
-    <div class = "nav-inner">
-
+    <div class="nav-inner">
       <a href="../index.html" class="logo">Visual Estate</a>
-
       <div class="city_nav">Berlin</div>
 
       <div class="nav-links">
@@ -45,20 +46,27 @@
         <a href="#">Contact</a>
       </div>
 
+
+      <div class="nav-underline"></div>
     </div>
   </nav>
 
 
+
   <div class="section">
     <div class="city city-berlin">
-      <div class = 'city-infos'>
+      <div class='city-infos'>
 
         <h1>Berlin: the city of contrasts</h1>
-        <p>Berlin is a city of contrasts, where history meets modernity. The real estate market reflects this duality, with
-          a mix of historic buildings and contemporary developments. The average property prices vary significantly across
+        <p>Berlin is a city of contrasts, where history meets modernity. The real estate market reflects this duality,
+          with
+          a mix of historic buildings and contemporary developments. The average property prices vary significantly
+          across
           different districts, influenced by factors such as location, amenities, and historical significance.</p>
-        <p>In the heart of Berlin, you can find stunning apartments in historic buildings, while the outskirts offer more
-          affordable options. The city's diverse neighborhoods each have their own unique character, making it an exciting
+        <p>In the heart of Berlin, you can find stunning apartments in historic buildings, while the outskirts offer
+          more
+          affordable options. The city's diverse neighborhoods each have their own unique character, making it an
+          exciting
           place to explore and invest in real estate.</p>
 
       </div>
@@ -66,16 +74,154 @@
   </div>
 
 
-  <div id="scatter" class = "section"> 
+
+  <div class="section" style="background-color: #0d0c0c;">
+    <div class="berlin-heatmap">
+      <div class="heatmap-text">
+        <h1>How much does a life in Berlin cost?</h1>
+        <p>Berlin is known for its vibrant culture, rich history, and diverse neighborhoods...
+        </p>
+      </div>
+      <div id="map"></div>
+    </div>
+  </div>
+
+
+  <div class="section" style="background-color: #0d0c0c;">
+
+    <div class="berlin-scatter">
+      <iframe src="../assets/berlin/berlin_pricevsaera.html" frameborder="0"></iframe>
+
+      <div class="scatter-text">
+        <h1>Price vs. Area</h1>
+        <p>Berlin's real estate market is characterized by a wide range of property prices, influenced by factors such
+          as
+          location, size, and amenities. The scatter plot visualizes the relationship between price and area,
+          highlighting
+          the diversity of options available in the city.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+    <div class="section" style="background-color: #0d0c0c;">
+
+    <div class="berlin-scatter-2">
+      <iframe src="../assets/berlin/berlin_pricevsconstructionyear.html" frameborder="0" scrolling = "no"></iframe>
+
+      <div class="scatter-text-2">
+        <h1>Price vs. construction</h1>
+        <p>Berlin's real estate market is characterized by a wide range of property prices, influenced by factors such
+          as
+          location, size, and amenities. The scatter plot visualizes the relationship between price and area,
+          highlighting
+          the diversity of options available in the city.</p>
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+
+
+
+    <div class="section" style="background-color: #0d0c0c;">
+
+    <div class="berlin-scatter-3">
+      <iframe src="../assets/berlin/berlin_pricevsrooms.html" frameborder="0" scrolling = "no"></iframe>
+
+      <div class="scatter-text-2">
+        <h1>Price vs. rooms</h1>
+        <p>Berlin's real estate market is characterized by a wide range of property prices, influenced by factors such
+          as
+          location, size, and amenities. The scatter plot visualizes the relationship between price and area,
+          highlighting
+          the diversity of options available in the city.</p>
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+
+ 
+
+
+      <div class="section" style="background-color: #0d0c0c;">
+
+    <div class="berlin-scatter-3">
+      <iframe src="../assets/berlin/berlin_pricevsneighborhood.html" frameborder="0" scrolling = "no"></iframe>
+
+      <div class="scatter-text-2">
+        <h1>Price vs. rooms</h1>
+        <p>Berlin's real estate market is characterized by a wide range of property prices, influenced by factors such
+          as
+          location, size, and amenities. The scatter plot visualizes the relationship between price and area,
+          highlighting
+          the diversity of options available in the city.</p>
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+
+ 
+
+
+
+<div class="section" style="background-color: #0d0c0c;"> 
+  <div class="berlin-heatmap">
+    <div class="heatmap-text">
+      <h1>How much does a life in Berlin cost?</h1>
+      <p>Berlin is known for its vibrant culture, rich history, and diverse neighborhoods...
+      </p>
+    </div>
+    <div id="map"></div>
+  </div>
+</div>
+
+
+
+
+<div class="section" style="background-color: #0d0c0c;"> 
+  <div class="berlin-heatmap">
+    <div class="heatmap-text">
+      <h1>How much does a life in Berlin cost?</h1>
+      <p>Berlin is known for its vibrant culture, rich history, and diverse neighborhoods...
+      </p>
+    </div>
+    <div id="map"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <div id="scatter" class="section">
     <h4>Surface vs. Price by Neighborhood</h4>
   </div>
 
 
-  <div id="feature-based-bar-plot" class = "section"> 
+  <div id="feature-based-bar-plot" class="section">
     <div id="feature-based-bar-plot-container">
       <div id="feature-based-bar-plot-filters">
-          
-        <label>Rooms:</label><br/>
+
+        <label>Rooms:</label><br />
         <select id="rooms-select">
           <option value="all">Any</option>
           <option value="1">1</option>
@@ -84,8 +230,8 @@
           <option value="4">4</option>
           <option value="5+">&ge; 5</option>
         </select>
-        <br/><br/>
-        <label>Price Range (€):</label><br/>
+        <br /><br />
+        <label>Price Range (€):</label><br />
         <!-- <div class="range_container">
         <div class="sliders_control"> -->
         <span id="min-price-value">30,000</span>
@@ -93,8 +239,8 @@
         <input type="range" id="max-price-slider" min="30000" max="15900000" step="10000" value="15900000">
         <span id="max-price-value">15,900,000</span>
         <!-- </div> -->
-        <br/><br/>
-        <label>Size Range (m²):</label><br/>
+        <br /><br />
+        <label>Size Range (m²):</label><br />
         <span id="min-size-value">10</span>
         <input type="range" id="min-size-slider" min="10" max="970" step="10" value="10">
         <input type="range" id="max-size-slider" min="10" max="970" step="10" value="970">
@@ -110,7 +256,7 @@
   </div>
 
 
-  <div id="map" class = "section"> 
+  <div id="map" class="section">
     <h4>Chloropleth map</h4>
   </div>
 
