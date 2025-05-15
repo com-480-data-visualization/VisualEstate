@@ -47,6 +47,56 @@ export function drawMap(geoData, districtData) {
         })
         .on("mouseout", () => tooltip.transition().duration(200).style("opacity", 0));
 
+
+        // Color legend (vertical gradient bar)
+const legendHeight = 350;
+const legendWidth = 10;
+
+// Create defs for gradient
+const defs = svg.append("defs");
+const linearGradient = defs.append("linearGradient")
+    .attr("id", "legend-gradient")
+    .attr("x1", "0%")
+    .attr("y1", "100%")
+    .attr("x2", "0%")
+    .attr("y2", "0%");
+
+// Generate color stops
+const stops = 10;
+const minPrice = d3.min(prices);
+const maxPrice = d3.max(prices);
+
+for (let i = 0; i <= stops; i++) {
+    const t = i / stops;
+    linearGradient.append("stop")
+        .attr("offset", `${t * 100}%`)
+        .attr("stop-color", colorScale(minPrice + t * (maxPrice - minPrice)));
+}
+
+// Append gradient bar
+const legendGroup = svg.append("g")
+    .attr("transform", `translate(${width - 70},${(height - legendHeight) / 2})`);
+
+legendGroup.append("rect")
+    .attr("width", legendWidth)
+    .attr("height", legendHeight)
+    .style("fill", "url(#legend-gradient)")
+    .attr("stroke", "black");
+
+// Add scale beside it
+const legendScale = d3.scaleLinear()
+    .domain([minPrice, maxPrice])
+    .range([legendHeight, 0]);
+
+const legendAxis = d3.axisRight(legendScale)
+    .ticks(5)
+    .tickFormat(d3.format(".0f"));
+
+legendGroup.append("g")
+    .attr("transform", `translate(${legendWidth}, 0)`)
+    .call(legendAxis)
+    .selectAll("text")
+    .style("fill", "white"); // adjust to your background
         
 }
 

@@ -21,6 +21,11 @@
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+  
+
 </head>
 
 
@@ -75,12 +80,37 @@
 
 
 
-  <div class="section" style="background-color: #121212;">
+  <div class="section" style="background-color: #191919;">
     <div class="berlin-heatmap">
       <div class="heatmap-text">
         <h1>How much does a life in Berlin cost?</h1>
-        <p>Berlin is known for its vibrant culture, rich history, and diverse neighborhoods...
-        </p>
+
+        <ul>
+          <li><strong style="color: #ff5e5e;">Deep reds in the center and northeast</strong> — notably
+            <strong>Mitte</strong>, <strong>Charlottenburg</strong>,<strong>Friedrichsgain</strong>, and
+            <strong>Pankow</strong> — signal the <em>highest average prices</em>, pushing past
+            <strong>7,000/m²€</strong>. These are Berlin’s cultural and commercial hubs, attracting young professionals,
+            tourists, and international buyers alike.</li>
+          <br>
+          <li><strong style="color: #ffa500;">To the south and west</strong>, prices begin to mellow. Neighborhoods like
+            <strong>Steglitz-Zehlendorf</strong>, <strong>Tempelhof</strong> as well as <strong>Neukölln</strong> offer
+            more space and calm for slightly less per square meter, between <strong>6,500/m²€</strong> and
+            <strong>5,500/m²€</strong></li>
+          <br>
+          <li><strong style="color: #f5f57a;">Meanwhile, peripheral districts</strong> like <strong>Marzahn</strong>,
+            <strong>Spandau</strong>, <strong>Lichtenberg</strong> and <strong>Treptow</strong> remain more affordable,
+            often dipping below <strong>€5,000/m²</strong>. These areas are increasingly eyed for long-term investment
+            as the city expands outward.</li>
+        </ul>
+        <br>
+        <h3> 💡 Key idea: </h3>
+        <ul>
+          <li><strong>Urban core = premium:</strong> Convenience, culture, and connectivity come at a cost.</li>
+          <li><strong>Outer districts = opportunity:</strong> Lower prices suggest potential for growth and
+            gentrification.</li>
+          <li><strong>Strong east-west price asymmetry</strong> continues, rooted in Berlin’s post-reunification
+            evolution.</li>
+        </ul>
       </div>
       <div id="map"></div>
     </div>
@@ -90,20 +120,78 @@
   <div class="section" style="background-color: #121212;">
 
     <div class="berlin-scatter">
-      <iframe src="../assets/berlin/berlin_pricevsaera.html" frameborder="0"></iframe>
+      <iframe src="../assets/berlin/berlin_pricevsarea_toggle.html" frameborder="0"></iframe>
 
       <div class="scatter-text">
-        <h1>Price vs. Area</h1>
-        <p>Berlin's real estate market is characterized by a wide range of property prices, influenced by factors such
-          as
-          location, size, and amenities. The scatter plot visualizes the relationship between price and area,
-          highlighting
-          the diversity of options available in the city.</p>
+        <h1>More Space = More Expensive?</h1>
+        <!-- 
+  <p>Yikes... this scaling is rough! But the linear scale reveals just how scattered the Berlin property market is — both in <strong>price</strong> and <strong>area</strong>. From cozy flats to expansive estates, listings range all the way up to <strong>€16 million</strong> and <strong>970 sqm</strong>!</p>
+    <p> You’ll definitely find something that fits your needs — whether it's a compact studio or a luxury penthouse. 💸 Want a clearer picture? Try switching to a <strong>log scale</strong> (click the “Log Scale” button at the top left) to better explore trends across all price ranges.</p>
+
+ 
+  Densest region:</strong> Most properties cluster between <strong>50–150 sqm</strong> and <strong>€300k–€1M</strong>, representing the heart of Berlin’s real estate market.
+  Luxury outliers:</strong> Homes above <strong>€2M</strong> tend to be large (150+ sqm) and far less frequent — classic signs of exclusivity.
+Small-but-expensive gems:</strong> Some high-price, low-area listings likely reflect luxury apartments in prime locations or buildings with unique value.
+
+
+  💡 Insights:
+  
+ Non-linear pricing:</strong> Price doesn’t increase proportionally with size — doubling the area doesn’t necessarily double the price.</li>
+Clear market segments:</strong> The three price tiers form visibly distinct bands, hinting at different buyer profiles and neighborhood types.</li>
+Planning potential:</strong> These clusters could guide urban planners, investors, or policy makers in identifying affordability zones or gentrification hotspots.</li>
+ -->
+
+        <p> Yikes... this scaling is rough! But the linear scale reveals just how scattered the Berlin property market
+          is — both in <strong>price</strong> and <strong>area</strong>. From cozy flats to expansive estates, listings
+          range all the way up to <strong>€16 million</strong> and <strong>970 sqm</strong>!
+
+          You’ll definitely find something that fits your needs !.
+          <br>
+          💸 Want a clearer picture? Try switching to a <strong>log scale</strong> (click the “Log Scale” button at the
+          top left) to better explore trends across all price ranges.
+          <br>
+          <strong>Densest region:</strong> Most properties cluster between <strong>50–150 sqm</strong> and
+          <strong>€300k–€1M</strong>, representing the heart of Berlin’s real estate market.
+          <br>
+          <strong>Luxury outliers:</strong> Homes above <strong>€2M</strong> tend to be large (150+ sqm) and far less
+          frequent — classic signs of exclusivity.
+          <br>
+          <strong>Small-but-expensive gems:</strong> Some high-price, low-area listings likely reflect luxury apartments
+          in prime locations or buildings with unique value.
+
+
+          💡 Insights:
+
+          Non-linear pricing:</strong> Price doesn’t increase proportionally with size — doubling the area doesn’t
+          necessarily double the price.
+          Clear market segments:</strong> The three price tiers form visibly distinct bands, hinting at different buyer
+          profiles and neighborhood types.
+          Planning potential:</strong> These clusters could guide urban planners, investors, or policy makers in
+          identifying affordability zones or gentrification hotspots.
+
+
+        </p>
+
       </div>
 
     </div>
 
   </div>
+
+
+  <div class = "section">
+
+    <div class="carousel">
+  <div class="carousel-track">
+    <img src="../images/berlin/p1.jpg" class="slide" />
+    <img src="../images/berlin/p2.jpg" class="slide" />
+    <img src="../images/berlin/p3.jpg" class="slide" />
+    <!-- Add more images as needed -->
+  </div>
+</div>
+
+  </div>
+
 
 
   <div class="section" style="background-color: #121212;">
@@ -180,11 +268,11 @@
   <div class="section" style="background-color: #121212;">
     <div class="energy-heating">
       <div class="iframes">
-        <iframe src="../assets/berlin/berlin_price_per_area_energy.html" frameborder="0" scrolling = 'no'></iframe>
-        <iframe src="../assets/berlin/berlin_price_per_area_heating.html" frameborder="0" scrolling = 'no'></iframe>
+        <iframe src="../assets/berlin/berlin_price_per_area_energy.html" frameborder="0" scrolling='no'></iframe>
+        <iframe src="../assets/berlin/berlin_price_per_area_heating.html" frameborder="0" scrolling='no'></iframe>
       </div>
 
-      <div class = "energy-heating-text">
+      <div class="energy-heating-text">
         <h1>Price per area vs. Energy and Heating</h1>
         <p>Berlin's real estate market is characterized by a wide range of property prices, influenced by factors such
           as
@@ -192,8 +280,8 @@
           highlighting
           the diversity of options available in the city.</p>
 
+      </div>
     </div>
-  </div>
   </div>
 
 
@@ -202,10 +290,11 @@
   <div class="section" style="background-color: #121212;">
 
     <div class="energy-pie-chart">
- 
-        <iframe src="../assets/berlin/berlin_heating_neighborhood_distribution.html" frameborder="0" scrolling="no"></iframe>
-       
-      
+
+      <iframe src="../assets/berlin/berlin_heating_neighborhood_distribution.html" frameborder="0"
+        scrolling="no"></iframe>
+
+
       <div class="pie-chart-text">
         <h1>Price vs. neighborhood</h1>
         <p>Berlin's real estate market is characterized by a wide range of property prices, influenced by factors such
@@ -226,10 +315,11 @@
   <div class="section" style="background-color: #121212;">
 
     <div class="energy-pie-chart">
- 
-        <iframe src="../assets/berlin/berlin_energy_neighborhood_distribution.html" frameborder="0" scrolling="no"></iframe>
-       
-      
+
+      <iframe src="../assets/berlin/berlin_energy_neighborhood_distribution.html" frameborder="0"
+        scrolling="no"></iframe>
+
+
       <div class="pie-chart-text">
         <h1>Price vs. neighborhood</h1>
         <p>Berlin's real estate market is characterized by a wide range of property prices, influenced by factors such

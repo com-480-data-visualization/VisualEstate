@@ -463,9 +463,26 @@ nav .nav-links a {
  padding-left: 2rem;
 padding-right: 2rem;
 
-
 }
 
 
 
 
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  flex-shrink: 0;
+}
