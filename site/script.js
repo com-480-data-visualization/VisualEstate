@@ -72,9 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
 );
 
 
-
-
-
   // Counter
   function animateCount(el, target, duration = 1000) {
     let start = 0;
@@ -85,6 +82,17 @@ document.addEventListener('DOMContentLoaded', () => {
       if (start < target) setTimeout(step, stepTime);
     };
     step();
+  }
+
+
+
+ function scrollToNextSection() {
+    const currentSection = document.querySelector(".section");
+    const nextSection = currentSection.nextElementSibling;
+
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
   }
 
   const observer = new IntersectionObserver(entries => {
@@ -105,5 +113,18 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('load', () => {
   ScrollTrigger.refresh();
 });
+
+ document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".scroll-down").forEach(button => {
+      button.addEventListener("click", () => {
+        const currentSection = button.closest(".section");
+        const nextSection = currentSection.nextElementSibling;
+
+        if (nextSection) {
+          nextSection.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  });
 
 

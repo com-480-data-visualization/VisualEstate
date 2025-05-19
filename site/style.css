@@ -466,5 +466,73 @@ padding-right: 2rem;
 }
 
 
+.tips {
+  background-color: #111417;
+  border-radius: 23px;
+  padding: 1rem;
+
+}
 
 
+.tips h1{
+  padding-bottom: 2rem;
+}
+
+.tips p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.tips ul {
+  list-style-type: disc;
+  padding-left: 4rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+
+.scroll-down {
+  text-align: center;
+  font-size: 5em;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.guidelines {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  padding: 2rem 4rem;
+  flex-wrap: wrap;
+}
+
+.tip-box {
+  flex: 1;
+  min-width: 220px;
+  background-color: #1a1d21;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  color: #f1f1f1;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.tip-box:hover {
+  transform: translateY(-4px);
+}
