@@ -73,7 +73,7 @@
     <div style="display: flex; flex-direction: column; position: relative; z-index: 1;">  
   
       <!-- Bloc du haut -->
-      <div style="height: 50vh; display: flex; align-items: center; justify-content: center;">
+      <div style="height: 55vh; margin-top: 10; display: flex; align-items: center; justify-content: center;">
   
         <!-- Texte gauche -->
         <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
@@ -101,7 +101,7 @@
       </div>
   
       <!-- Bloc du bas -->
-      <div style="height: 55vh; display: flex; align-items: center; justify-content: center;">
+      <div style="height: 55vh; margin-bottom: 30; display: flex; align-items: center; justify-content: center;">
   
         <!-- Texte gauche -->
         <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
@@ -177,17 +177,18 @@
       <div style="flex: 1; color: white; margin-top: 20rem;">
         <h3 style="margin-top: 0;">Insights</h3>
         <p>
-          This interactive map shows the average real estate price per district in Madrid.
-          You can explore disparities between central and peripheral areas, spot trends,
-          and understand market dynamics. Districts like Salamanca and Chamberí
-          show significantly higher prices compared to outer zones.
+              This interactive scatter plot illustrates the relationship between property surface and price in Madrid. A clear trend emerges: larger properties tend to be more expensive, though with notable variations across neighborhoods.
+              <br><br>
+              The white line represents the average price per surface range, revealing sharp increases beyond 200 m², especially in premium districts. Outliers indicate luxury properties in upscale areas like Salamanca and Chamberí, while tighter clusters suggest more affordable housing zones.
         </p>
+
       </div>
   
     </div>
   </div>
 
-  <div id="feature-based-bar-plot" class = "section city city-madrid-444"> 
+  <div id="feature-based-bar-plot" class = "section city city-madrid"> 
+    <h1 style="margin-top: 6rem; position: relative; z-index: 1;">Encontremos la casa de sus sueños ! </h1>
     <div id="feature-based-bar-plot-container", style="position: relative; z-index: 1;">
       <div id="feature-based-bar-plot-filters">
           
@@ -235,7 +236,7 @@
 
     </div>
 
-    <h4>Feature-based bar plot</h4>
+    <h4 style="margin-bottom: 6rem; position: relative; z-index: 1;">Select your criteria, we'll handle the rest </h1>
   </div>
 
   <script src="./madrid_main.js" type="module"></script>
