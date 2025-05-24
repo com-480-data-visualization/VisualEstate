@@ -19,6 +19,19 @@
   background-image: url('./images/madrid/madrid111.jpg');
 }
 
+.city-madrid-222 {
+  background-image: url('./images/madrid/madrid222.jpeg');
+}
+
+.city-madrid-333 {
+  background-image: url('./images/madrid/madrid333.jpg');
+}
+
+.city-madrid-444 {
+  background-image: url('./images/madrid/madrid444.jpg');
+}
+
+
 .city::before {
   content: "";
   position: absolute;
@@ -28,6 +41,7 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.65);
   z-index: 0;
+  pointer-events: none;
 }
 
 .city-infos {
