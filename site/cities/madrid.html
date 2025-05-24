@@ -159,21 +159,33 @@
   
     </div>
   </div>
+  <div class="section" style="background-color: #111; padding: 25rem 0;">
+    <div style="width: 100%; max-width: 1200px; margin-top: 17rem; display: flex; gap: 2rem; align-items: flex-start;">
   
-
-  <div class="section city city-madrid-111">
-    <div style="width: 100%; max-width: 1200px; margin: auto; position: relative; z-index: 1;">
-      <h2 style="color: white;">Average Price by District</h2>
-      <iframe 
-        src="../assets/madrid//madrid_scatter.html"
-        style="width: 100%; height: 85vh; margin-top: -2rem; border: none;"
-        loading="lazy"
-        allowfullscreen>
-      </iframe>
-      <div style="text-align: center; margin-top: -7rem;">
+      <!-- Colonne de la carte -->
+      <div style="flex: 2;">
+        <iframe 
+          src="../assets/madrid//madrid_scatter.html"
+          style="width: 100%; height: 120vh; border: none; border-radius: 12px;"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
       </div>
+  
+      <!-- Colonne du texte -->
+      <div style="flex: 1; color: white; margin-top: 20rem;">
+        <h3 style="margin-top: 0;">Insights</h3>
+        <p>
+          This interactive map shows the average real estate price per district in Madrid.
+          You can explore disparities between central and peripheral areas, spot trends,
+          and understand market dynamics. Districts like Salamanca and Chamberí
+          show significantly higher prices compared to outer zones.
+        </p>
+      </div>
+  
     </div>
   </div>
+
   <div id="feature-based-bar-plot" class = "section city city-madrid-444"> 
     <div id="feature-based-bar-plot-container", style="position: relative; z-index: 1;">
       <div id="feature-based-bar-plot-filters">
