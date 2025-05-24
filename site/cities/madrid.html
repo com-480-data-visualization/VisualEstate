@@ -67,39 +67,98 @@
   <div id="scatter" class = "section">
     <h4>Surface vs. Price by Neighborhood (for first 12 districts)</h4>
   </div>
-
-  <div class = "section" style="background-color: #0e0e0e;">
-
-    <div class = "madrid-map">
-
-      <div class ="maps">
-        <iframe src="../assets/madrid/madrid_density_map.html" width="100%" height="100%" frameborder="0" ></iframe>
-        <iframe src="../assets/madrid/madrid_dot_map.html" width="100%" height="100%" frameborder="0" scrolling = "no"></iframe>
+  <div class="section" style="background-color: rgb(21, 21, 21); margin: 0; padding: 0;">
+    <div style="display: flex; flex-direction: column;">
+  
+      <!-- Bloc du haut -->
+      <div style="height: 50vh; display: flex; align-items: center; justify-content: center;">
+  
+        <!-- Texte gauche -->
+        <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
+          <h3>Density Insight</h3>
+          <p style="font-size: 0.95rem;">
+            Discover how the urban fabric of Madrid is shaped by density. Central zones appear darker, showing intense residential clusters.
+          </p>
+        </div>
+  
+        <!-- Carte centrale -->
+        <iframe
+          src="../assets/madrid/madrid_density_map.html"
+          style="width: 75vw; height: 100%; border: none; border-radius: 12px;"
+          loading="lazy">
+        </iframe>
+  
+        <!-- Texte droite -->
+        <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
+          <h3>Interpretation</h3>
+          <p style="font-size: 0.95rem;">
+            Use this map to spot urban pressure points and possible real estate hot zones. Density often correlates with demand.
+          </p>
+        </div>
+  
       </div>
-
-
-      <div class ="maps-legend">
-        <h2>Legend</h2>
-        <p>Density Map: This map shows the population density in Madrid, with darker areas indicating higher density.</p>
-        <p>Dot Map: Each dot represents a certain number of people, providing a visual representation of population distribution.</p>
-
-
+  
+      <!-- Bloc du bas -->
+      <div style="height: 55vh; display: flex; align-items: center; justify-content: center;">
+  
+        <!-- Texte gauche -->
+        <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
+          <h3>Dot Distribution</h3>
+          <p style="font-size: 0.95rem;">
+            Every dot stands for a group of people. It helps visualize how population is scattered across Madrid’s districts.
+          </p>
+        </div>
+  
+        <!-- Carte centrale -->
+        <iframe
+          src="../assets/madrid/madrid_dot_map.html"
+          style="width: 75vw; height: 100%; border: none; border-radius: 12px;"
+          loading="lazy">
+        </iframe>
+  
+        <!-- Texte droite -->
+        <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
+          <h3>Why it matters</h3>
+          <p style="font-size: 0.95rem;">
+            This dot map lets you grasp population spread with intuitive clarity. Ideal for comparing density vs. space.
+          </p>
+        </div>
+  
       </div>
+  
     </div>
   </div>
-  <div class="section">
-    <div style="width: 100%; max-width: 1200px; margin: auto;">
-      <h2 style="color: white;">Average Price by District</h2>
-      <iframe 
-        src="../assets/madrid_map.html"
-        style="width: 100%; height: 85vh; margin-top: -2rem; border: none;"
-        loading="lazy"
-        allowfullscreen>
-      </iframe>
-      <div style="text-align: center; margin-top: -7rem;">
+  
+  
+  
+  <div class="section" style="background-color: #111; padding: 2rem 0;">
+    <div style="width: 100%; max-width: 1200px; margin: auto; display: flex; gap: 2rem; align-items: flex-start;">
+  
+      <!-- Colonne de la carte -->
+      <div style="flex: 2;">
+        <h2 style="color: white;">Average Price by District</h2>
+        <iframe 
+          src="../assets/madrid/madrid_map.html"
+          style="width: 100%; height: 70vh; border: none; border-radius: 12px;"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
       </div>
+  
+      <!-- Colonne du texte -->
+      <div style="flex: 1; color: white; margin-top: 15rem;">
+        <h3 style="margin-top: 0;">Insights</h3>
+        <p>
+          This interactive map shows the average real estate price per district in Madrid.
+          You can explore disparities between central and peripheral areas, spot trends,
+          and understand market dynamics. Districts like Salamanca and Chamberí
+          show significantly higher prices compared to outer zones.
+        </p>
+      </div>
+  
     </div>
   </div>
+  
 
   <div class="section">
     <div style="width: 100%; max-width: 1200px; margin: auto;">
