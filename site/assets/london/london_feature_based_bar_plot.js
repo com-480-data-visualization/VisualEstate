@@ -43,7 +43,9 @@ export function drawBarplot(data) {
             .range([0, height])
             .padding(0.1);
 
-        const color = d3.scaleOrdinal(d3.schemeDark2);
+        const color = d3.scaleOrdinal(d3.schemeDark2)
+            .domain(neighborhoodCounts.map(d => d[0]))
+            .range(["#312b31","#897174","#9bae39","#695a84"]);
         
         // Clear the plan
         svg.selectAll("rect, text").remove();

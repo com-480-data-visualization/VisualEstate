@@ -110,7 +110,7 @@
 }
 
 .london_density_map_frame_container {
-  flex: 0 0 60%;
+  flex: 0 0 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,6 +150,7 @@
 
 .london_density_map_text p {
   flex: 1;
+
   font-size: 1.2rem;
   text-align: justify;
 
@@ -198,7 +199,7 @@
   text-align: justify;
   padding-left: 2rem;
   padding-top: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .london-barplot-container {
@@ -802,4 +803,21 @@ ul {
   height: 100vh;
   object-fit: cover;
   flex-shrink: 0;
+}
+
+
+.home-button {
+  display: inline-block;
+  padding: 10px 16px;
+
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #929292;
 }

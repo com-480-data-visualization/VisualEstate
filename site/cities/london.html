@@ -7,19 +7,22 @@
   <title>Visual Estate</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../city.css">
- <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 
   <script src="../script.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <link rel="icon" type="image/png" href="..\images\iconVE.png">
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  
+  <script src="https://unpkg.com/lucide@latest"></script>
+
 </head>
 
 
@@ -33,7 +36,7 @@
     <div class="nav-inner">
       <a href="../index.html" class="logo">Visual Estate</a>
       <div class="city_nav">London</div>
-  
+
       <div class="nav-links">
         <a href="#">About</a>
         <div class="dropdown">
@@ -46,8 +49,8 @@
         </div>
         <a href="#">Contact</a>
       </div>
-  
- 
+
+
       <div class="nav-underline"></div>
     </div>
   </nav>
@@ -58,8 +61,8 @@
   <div class="section">
     <div class="city city-london">
       <div class="city-infos ">
-        
-        <h1 >London: a city of layers</h1>
+
+        <h1>London: a city of layers</h1>
         <p>London is a city built on layers of history, culture, and modern ambition. Its real estate market reflects
           this
           complexity, with striking differences between neighborhoods — from historic Georgian townhouses to
@@ -72,7 +75,7 @@
       </div>
     </div>
   </div>
-      
+
 
 
   <div class="section" style="background-color: rgb(21, 21, 21);">
@@ -80,7 +83,7 @@
 
       <div class="london_density_map_frame_container">
 
-        <iframe src="../assets/london/london_density_map.html" class = ""scrolling='no'></iframe>
+        <iframe src="../assets/london/london_density_map.html" class="" scrolling='no'></iframe>
       </div>
       <div class="london_density_map_text  ">
         <h1> Where are located all the properties ? </h1>
@@ -107,31 +110,37 @@
 
   <div class="section" style="background-color: rgb(21, 21, 21)">
     <div class="london_treemap_container ">
-      <iframe src="../assets/london/london_treemap.html" class= "" width="820" height="700" frameborder="0" scrolling="no" ></iframe>
+      <iframe src="../assets/london/london_treemap.html" class="" width="820" height="700" frameborder="0"
+        scrolling="no"></iframe>
       <div class="london_treemap_text  ">
         <h1> What are the London properties features ? </h1>
         <p>
-          The treemap provides a clear overview of <strong>property characteristics</strong> in London, segmented by
-          category.
-          Notably, <strong>detached</strong> and <strong>semi-detached houses</strong> make up the largest share, while
-          <strong>apartments</strong> represent nearly a third of the market.
-          <strong>Interior styles</strong> are fairly evenly split, with <strong>classic</strong> and
-          <strong>industrial</strong>
-          dominating slightly. Among <strong>heating types</strong>, <strong>electric</strong> and <strong>gas
-            heating</strong>
-          are the most common, while <strong>central</strong> and <strong>underfloor</strong> options trail closely.
-          <strong>Outdoor amenities</strong> such as <strong>balconies</strong> and <strong>gardens</strong> are
-          prevalent,
-          highlighting their importance in urban living preferences.
-          Interestingly, <strong>balconies</strong> appear in <strong>66%</strong> of listings, suggesting they are a
-          <strong>key feature</strong> for many London buyers or renters.
-        </p>
 
-        <p>
-          While this overview captures the <strong>general availability</strong> of features, it doesn't reveal how they
-          are
-          <strong>distributed across neighborhoods</strong> — an essential factor for users making
-          <strong>location-based decisions</strong>.
+          The treemap offers a comprehensive overview of <strong>property characteristics</strong> in London, organized
+          by category.
+          <br>
+
+          <br>
+
+          <strong>Detached</strong> and <strong>semi-detached houses</strong> constitute the largest share, while
+          <strong>apartments</strong> account for nearly a third of the market.
+
+          <br>
+          <br>
+
+          <strong>Interior styles</strong> are relatively balanced, with <strong>classic</strong> and
+          <strong>industrial</strong> styles having a slight edge.
+          Among <strong>heating types</strong>, <strong>electric</strong> and <strong>gas</strong> systems are most
+          common, followed closely by <strong>central</strong> and <strong>underfloor heating</strong>.
+          <br>
+          <br>
+
+
+          <strong>Outdoor amenities</strong> such as <strong>balconies</strong> and <strong>gardens</strong> are
+          frequently featured, underscoring their importance in urban living.
+          Notably, <strong>balconies</strong> appear in <strong>66%</strong> of listings, suggesting they are a
+          <strong>key feature</strong> for many prospective buyers and renters in London.
+
         </p>
       </div>
     </div>
@@ -144,8 +153,8 @@
 
   <div class="section" style="background-color: rgb(21, 21, 21)">
     <div class="london-barplot-container ">
-      <iframe src="../assets/london/london_barplot_neighborhood_per_features.html"  width="100%" height="800" frameborder="0"
-        scrolling="no"></iframe>
+      <iframe src="../assets/london/london_barplot_neighborhood_per_features.html" width="100%" height="800"
+        frameborder="0" scrolling="no"></iframe>
       <div class="london-barplot-text  ">
         <h1> Where to find your most important features ? </h1>
 
@@ -217,13 +226,26 @@
 
   <div class="section" style="background-color: rgb(21, 21, 21);">
     <div class="price-distribution-features">
-      <iframe src="../assets/london/london_boxplot_dropdown_price.html" width="100%" height="800" frameborder="0" class = ""
-        scrolling="no"></iframe>
+      <iframe src="../assets/london/london_boxplot_dropdown_price.html" width="100%" height="800" frameborder="0"
+        class="" scrolling="no"></iframe>
       <div class="price-distribution-features-text  ">
         <h1> How does the price of a property vary with its features ? </h1>
-        <p> The boxplot shows the distribution of prices for properties with different features. It provides a clear
-          visual representation of how each feature affects property prices, helping buyers and investors make
-          informed decisions.</p>
+
+        <p>
+
+
+
+          <i> Little reminder of how does a box plot work:</i> The lower bar shows lower fence, the box represents the
+          main distribution from the first to third quartile with a line for the median, and the top bar marks the upper
+          range or fence.
+
+          <br>
+          <br>
+          <br>
+
+          <strong>Check the distribution of your favorite feature by selecting it in the dropdown menu !</strong>
+        </p>
+
       </div>
     </div>
   </div>
@@ -231,13 +253,25 @@
 
   <div class="section" style="background-color: rgb(21, 21, 21);">
     <div class="london-boxplot">
-      <iframe src="../assets/london/london_boxplot_price_neighborhood.html" frameborder="0" scrolling="no" class = ""></iframe>
+      <iframe src="../assets/london/london_boxplot_price_neighborhood.html" frameborder="0" scrolling="no"
+        class=""></iframe>
 
       <div class="london-boxplot-text  ">
         <h1> How does the price of a property vary with its neighborhood ? </h1>
-        <p> The boxplot shows the distribution of prices for properties in different neighborhoods. It provides a clear
-          visual representation of how each neighborhood affects property prices, helping buyers and investors make
-          informed decisions.</p>
+        <p>
+          The question you've been waiting for since the beginning of this analysis: <strong>where can you find the most
+            affordable property that matches your preferences?</strong><br><br>
+
+          This box plot shows the price distribution for each neighborhood, making it easy to compare property costs
+          across different areas.<br><br>
+
+          A quick glance, and <strong> Chelsea is already off my list...</strong> but Greenwich is speaking my language
+          with its surprisingly low median price!<br>
+
+          <br>
+
+          Now playing in my head: <i>“Price Tag” by Jessie J</i>.
+        </p>
       </div>
     </div>
   </div>
@@ -250,8 +284,21 @@
         scrolling="no"></iframe>
       <div class="london-scatter-plot-text ">
         <h1> How does the price of a property vary with its size ? </h1>
-        <p> The scatter plot shows the relationship between property prices and their size. It provides a clear visual
-          representation of how size affects property prices, helping buyers and investors make informed decisions.</p>
+
+
+
+        <p>
+          The scatter plot shows the relationship between <strong>property prices</strong> and their
+          <strong>size</strong>, offering a clear visual representation of how size impacts price—<i>helping buyers and
+            investors make informed decisions</i>.
+          <br><br>
+          As I mentioned earlier, <strong>Chelsea</strong> isn’t the place to be if you're looking for <u>affordable
+            properties</u>. But <strong>Greenwich</strong>, <strong>Shoreditch</strong>, and <strong>Islington</strong>
+          stand out as great options for finding <u>good value per square meter</u>.
+          <br><br>
+          Notice the proportional trend between <strong>price</strong> and <strong>size</strong>: larger properties
+          generally cost more, and this pattern is <i>clearly defined across neighborhoods</i>.
+        </p>
       </div>
     </div>
   </div>
@@ -260,25 +307,45 @@
 
   <div class="section" style="background-color: rgb(21, 21, 21);">
     <div class="london-diagram ">
-      <iframe src="../assets/london/london_sankey_diagram.html" width="100%" height="700" class = ""
-        frameborder="0" scrolling="no"></iframe>
+      <iframe src="../assets/london/london_sankey_diagram.html" width="100%" height="700" class="" frameborder="0"
+        scrolling="no"></iframe>
       <div class="london-diagram-text ">
         <h1> How does features influence each others ? </h1>
-        <p> The scatter plot shows the relationship between property prices and their size. It provides a clear visual
-          representation of how size affects property prices, helping buyers and investors make informed decisions.</p>
-      </div>
+        <p>
+  The <strong>Sankey diagram</strong> gives a visual overview of how different property features are connected—showing how many properties fall into each category across multiple characteristics.
+  It helps you see, for example, how many properties in a given <strong>neighborhood</strong> are of a certain <strong>house type</strong>, use a specific <strong>heating system</strong>, or are built with particular <strong>materials</strong>.
+  <br><br>
+
+  This graph focuses on energy-related and architectural aspects. You can choose between two plot options using the dropdown menu:
+  <br><br>
+  · <strong>For the energy-conscious:</strong> The first option shows how <strong>neighborhoods</strong> connect to <strong>house types</strong>, <strong>heating systems</strong>, and <strong>building materials</strong>. It's perfect for understanding how sustainability features vary across the city.
+  <br><br>
+  · <strong>For the design lovers:</strong> The second option reveals how each <strong>neighborhood</strong> is associated with specific <strong>views</strong>, which influence <strong>interior styles</strong> and the choice of <strong>materials</strong>.
+</p>
+      
+        </div>
     </div>
   </div>
 
 
-  <div id="feature-based-bar-plot" class = "section"> 
+  <div id="feature-based-bar-plot" class="section">
 
-    <h1 style="margin-bottom: 6rem;">Just say what you need,  we’ll point you in the right direction! </h1>
+    <h1 style="margin-bottom: 1rem;">Just say what you need, we’ll point you in the right direction! </h1>
+
+    <p style="padding-left: 10rem; padding-right: 10rem; text-align: justify; margin-bottom: 5rem; line-height: 1.5rem;">
+  
+  Just tell us what you're looking for — price, size, apartment or house, maybe even a garden or garage — and we’ll crunch the numbers.
+  The chart on the right shows the <strong>top neighborhoods</strong> where your dream property is most likely to be hiding.
+  <br>
+  Whether you're all about that <strong>Kensington class</strong>, vibing with <strong>Camden’s character</strong>, or drawn to the charm of <strong>Notting Hill</strong>, we’ve got you covered.
+  So go ahead — slide those sliders, check those boxes, and let us point you straight to your future happy place 🏡✨
+</p>
+
 
     <div id="feature-based-bar-plot-container">
       <div id="feature-based-bar-plot-filters">
-          
-        <label>Bedrooms:</label><br/>
+
+        <label>Bedrooms:</label><br />
         <select id="bedrooms-select">
           <option value="all">Any</option>
           <option value="1">1</option>
@@ -286,37 +353,37 @@
           <option value="3">3</option>
           <option value="4+">&ge; 4</option>
         </select>
-        <br/><br/>
-        <label>Bathrooms:</label><br/>
+        <br /><br />
+        <label>Bathrooms:</label><br />
         <select id="bathrooms-select">
           <option value="all">Any</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3+">&ge; 3</option>
         </select>
-        <br/><br/>
-        <label>Price Range (€):</label><br/>
+        <br /><br />
+        <label>Price Range (€):</label><br />
         <!-- <div class="range_container">
         <div class="sliders_control"> -->
         <span id="min-price-value">380,000</span>
-        <input type="range" id="min-price-slider" min="380000" max="4980000" step="10000" value="380000">
+        <input type="range"  id="min-price-slider" min="380000" max="4980000" step="10000" value="380000">
         <input type="range" id="max-price-slider" min="380000" max="4980000" step="10000" value="4980000">
         <span id="max-price-value">4,980,000</span>
         <!-- </div> -->
-        <br/><br/>
-        <label>Size Range (m²):</label><br/>
+        <br /><br />
+        <label>Size Range (m²):</label><br />
         <span id="min-size-value">50</span>
-        <input type="range" id="min-size-slider" min="50" max="250" step="10" value="50">
+        <input type="range" style="color: #71d1b2;" id="min-size-slider" min="50" max="250" step="10" value="50">
         <input type="range" id="max-size-slider" min="50" max="250" step="10" value="250">
         <span id="max-size-value">250</span>
         <!-- </div> -->
-        <br/><br/>
+        <br /><br />
         <input type="checkbox" id="apartment" checked>
         <label for="apartment">Apartment</label>
 
         <input type="checkbox" id="house" checked>
-        <label for="house">House</label><br/>
-        <br/>
+        <label for="house">House</label><br />
+        <br />
 
         <input type="checkbox" id="garden">
         <label for="garden">Garden</label>
@@ -329,10 +396,17 @@
 
     </div>
 
-    <h4>Feature-based bar plot</h4>
+    <a href="../index.html" class="home-button">
+  <i data-lucide="home"></i> 
+</a>
+
   </div>
 
   <script src="./london_main.js" type="module"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
 
 </body>
 
