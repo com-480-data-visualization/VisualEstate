@@ -15,11 +15,45 @@ export function drawBarplot(data) {
         d.m2 = +d.m2;
         d.price = +d.price;
         d.rooms = +d.rooms;
-    })
+    });
+
+    const priceSlider = document.getElementById('price-slider');
+    const sizeSlider = document.getElementById('size-slider');
+
+    noUiSlider.create(priceSlider, {
+        start: [40000, 13950000],
+        margin: 10000,
+        connect: true,
+        tooltips: wNumb({
+            decimals: 0,
+            thousand: ','
+        }),
+        step: 10000,
+        range: {
+            'min': [40000],
+            'max': [13950000]
+        }
+    });
+
+    noUiSlider.create(sizeSlider, {
+        start: [20, 990],
+        margin: 10,
+        connect: true,
+        tooltips: wNumb({
+            decimals: 0
+        }),
+        step: 10,
+        range: {
+            'min': [20],
+            'max': [990]
+        }
+    });
 
     // Detect user inputs and update plot accordingly
-    d3.selectAll("#rooms-select, #min-price-slider, #max-price-slider, #min-size-slider, #max-size-slider, #apartment, #house, #elevator, #garage")
+    d3.selectAll("#rooms-select, #apartment, #house, #elevator, #garage")
         .on("input", applyFilters);
+    priceSlider.noUiSlider.on('update', applyFilters);
+    sizeSlider.noUiSlider.on('update', applyFilters);
 
     // Display default plot
     applyFilters();
@@ -40,7 +74,9 @@ export function drawBarplot(data) {
             .range([0, height])
             .padding(0.1);
 
-        const color = d3.scaleOrdinal(d3.schemeDark2);
+        const color = d3.scaleOrdinal(d3.schemePastel1)
+            .domain(districtCounts.map(d => d[0]))
+            .range(["#FF7F00", "#CAB2D6", "#6A3D9A", "#FFFF99", "#B15928"]);
         
         // Clear the plan
         svg.selectAll("rect, text").remove();
@@ -72,20 +108,16 @@ export function drawBarplot(data) {
     function applyFilters() {
         // Select values entered by the user
         const roomVal = d3.select("#rooms-select").property("value");
-        const minPriceVal = +d3.select("#min-price-slider").property("value");
-        const maxPriceVal = +d3.select("#max-price-slider").property("value");
-        const minSizeVal = +d3.select("#min-size-slider").property("value");
-        const maxSizeVal = +d3.select("#max-size-slider").property("value");
+        const pricesVal = priceSlider.noUiSlider.get();
+        const minPriceVal = +pricesVal[0];
+        const maxPriceVal = +pricesVal[1];
+        const sizesVal = sizeSlider.noUiSlider.get();
+        const minSizeVal = +sizesVal[0];
+        const maxSizeVal = +sizesVal[1];
         const apartmentVal = d3.select("#apartment").property("checked"); // true by default
         const houseVal = d3.select("#house").property("checked"); // true by default
         const elevatorVal = d3.select("#elevator").property("checked"); // false by default
         const garageVal = d3.select("#garage").property("checked"); // false by default
-
-        // Update values displayed on the page
-        d3.select("#min-price-value").text(d3.format(",.0f")(minPriceVal)); 
-        d3.select("#min-size-value").text(minSizeVal);
-        d3.select("#max-price-value").text(d3.format(",.0f")(maxPriceVal)); 
-        d3.select("#max-size-value").text(maxSizeVal);
         
         // Select valid samples
         const filtered = data.filter(d => {

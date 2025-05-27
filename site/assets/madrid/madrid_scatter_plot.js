@@ -1,8 +1,8 @@
 export function drawScatterplot(data) {
 
-    const margin = {top: 40, right: 300, bottom: 60, left: 70},
-        width = 1100 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+    const margin = {top: 40, right: 180, bottom: 60, left: 70},
+        width = 1200 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
 
     const svg = d3.select("#scatter")
         .append("svg")
@@ -40,6 +40,21 @@ export function drawScatterplot(data) {
     svg.append("g")
     //  .attr('class', 'axis
         .call(d3.axisLeft(y_scale));
+
+    svg.append("text")
+        .attr("text-anchor", "middle")
+        .attr("x", width / 2)
+        .attr("y", height + margin.bottom - 10)
+        .style("fill", "white")
+        .text("Surface Area (m²)");
+
+    svg.append("text")
+        .attr("text-anchor", "middle")
+        .attr("transform", "rotate(-90)")
+        .attr("x", -height / 2)
+        .attr("y", -margin.left + 15)
+        .style("fill", "white")
+        .text("Price (€)");
 
     svg.selectAll("circle")
         .data(filtered_data)

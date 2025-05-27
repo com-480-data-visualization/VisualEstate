@@ -10,11 +10,14 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" />
   
   <link rel="icon" type="image/png" href="..\images\iconVE.png">
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/wnumb@1.2.0/wNumb.min.js"></script>
   
 </head>
 
@@ -64,21 +67,18 @@
       </div>
     </div>
   </div>
+  
 
-  <div id="scatter" class = "section">
-    <h4>Surface vs. Price by Neighborhood (for first 12 districts)</h4>
-  </div>
-
-  <div class="section city city-madrid-111">
-    <div style="display: flex; margin-top: 6rem; flex-direction: column; gap: 0rem; position: relative; z-index: 1;">
+  <div class="section">
+    <div style="display: flex; margin-top: 6rem; flex-direction: column; gap: 2rem; position: relative; z-index: 1;">
   
       <!-- Bloc du haut -->
       <div style="height: 55vh; display: flex; align-items: center; justify-content: center;">
   
         <!-- Texte gauche -->
         <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
-          <h3>Density Insight</h3>
-          <p style="font-size: 0.95rem;">
+          <h2>Density Insight</h2>
+          <p>
             Discover how the urban fabric of Madrid is shaped by density. Central zones appear darker, showing intense residential clusters.
           </p>
         </div>
@@ -92,8 +92,8 @@
   
         <!-- Texte droite -->
         <div style="flex: 1; max-width: 500px; color: white; padding: 1rem;">
-          <h3>Interpretation</h3>
-          <p style="font-size: 0.95rem;">
+          <h2>Interpretation</h2>
+          <p>
             Use this map to spot urban pressure points and possible real estate hot zones. Density often correlates with demand.
           </p>
         </div>
@@ -101,12 +101,12 @@
       </div>
   
       <!-- Bloc du bas -->
-      <div style="height: 55vh; margin-top: -7rem; display: flex; align-items: center; justify-content: center;">
+      <div style="height: 55vh; margin-top: -4rem; display: flex; align-items: center; justify-content: center;">
   
         <!-- Texte gauche -->
         <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
-          <h3>Dot Distribution</h3>
-          <p style="font-size: 0.95rem;">
+          <h2>Dot Distribution</h2>
+          <p>
             Every dot stands for a group of people. It helps visualize how population is scattered across Madrid’s districts.
           </p>
         </div>
@@ -120,8 +120,8 @@
   
         <!-- Texte droite -->
         <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
-          <h3>Why it matters</h3>
-          <p style="font-size: 0.95rem;">
+          <h2>Why it matters</h2>
+          <p>
             This dot map lets you grasp population spread with intuitive clarity. Ideal for comparing density vs. space.
           </p>
         </div>
@@ -139,7 +139,7 @@
   
       <!-- Colonne du texte -->
       <div style="flex: 1; color: white; margin-top: 15rem;">
-        <h3 style="margin-top: 0;">Insights</h3>
+        <h2 style="margin-top: 0;">Insights 🔎</h2>
         <p>
           This interactive map shows the average real estate price per district in Madrid.
           You can explore disparities between central and peripheral areas, spot trends,
@@ -149,7 +149,7 @@
       </div>
       <!-- Colonne de la carte -->
       <div style="flex: 2;">
-        <h2 style="color: white;">Average Price by District</h2>
+        <h1 style="color: white;">Average Price by District</h1>
         <iframe 
           src="../assets/madrid/madrid_map.html"
           style="width: 100%; height: 70vh; border: none; border-radius: 12px;"
@@ -160,40 +160,40 @@
   
     </div>
   </div>
-  <div class="section" style="background-color: #111; padding: 25rem 0;">
-    <div style="width: 100%; max-width: 1200px; margin-top: 17rem; display: flex; gap: 2rem; align-items: flex-start;">
   
-      <!-- Colonne de la carte -->
-      <div style="flex: 2;">
-        <iframe 
-          src="../assets/madrid//madrid_scatter.html"
-          style="width: 100%; height: 120vh; border: none; border-radius: 12px;"
-          loading="lazy"
-          allowfullscreen>
-        </iframe>
-      </div>
-  
-      <!-- Colonne du texte -->
-      <div style="flex: 1; color: white; margin-top: 20rem;">
-        <h3 style="margin-top: 0;">Scatter plot</h3>
-        <p>
-              This interactive scatter plot illustrates the relationship between property surface and price in Madrid. A clear trend emerges: larger properties tend to be more expensive, though with notable variations across neighborhoods.
-              <br><br>
-              The white line represents the average price per surface range, revealing sharp increases beyond 200 m², especially in premium districts. Outliers indicate luxury properties in upscale areas like Salamanca and Chamberí, while tighter clusters suggest more affordable housing zones.
-        </p>
 
-      </div>
-  
+  <div class="section" style="background-color: #111; padding: 8rem 2rem;">
+  <div class="madrid-scatter">
+
+    <!-- Text above -->
+    <div class="madrid-scatter-text">
+      <h1>Surface, Price, and the Madrid Market Divide</h1>
+      <p> This scatter plot maps out the relationship between <strong>property surface</strong> and <strong>price</strong> 
+        across the 12 most data-rich districts of Madrid, helping you visualize how real estate value scales with size. 
+        <br><br> Districts like <strong>Chamartín</strong> and <strong>Salamanca</strong> consistently position themselves 
+        well above the mean line, highlighting their status as <u>premium markets</u> where location drives significant price 
+        elevation. In contrast, areas such as <strong>Latina</strong> and <strong>Carabanchel</strong> sit clearly below average, 
+        offering <strong>better price-per-square-meter value</strong> for buyers seeking space without the central-city premium. 
+        <br><br> 
+        The overall pattern confirms that <strong>larger properties generally cost more</strong>, but with noticeable 
+        variation across neighborhoods, pointing to the importance of local market dynamics in shaping real estate pricing. 
+      </p>
     </div>
-  </div>
 
-  <div id="feature-based-bar-plot" class = "section city city-madrid"> 
-    <h1 style="margin-top: 6rem; position: relative; z-index: 1;">Encontremos la casa de sus sueños ! </h1>
+    <!-- Scatter plot below -->
+    <div id="scatter"></div>
+
+  </div>
+</div>
+
+
+  <div id="feature-based-bar-plot" class = "section"> 
+    <h1 >Encontremos la casa de sus sueños ! </h1>
     <div id="feature-based-bar-plot-container", style="position: relative; z-index: 1;">
       <div id="feature-based-bar-plot-filters">
           
-        <label>Rooms:</label><br/>
-        <select id="rooms-select">
+        <label>Rooms:</label> &nbsp;
+        <select id="rooms-select" class="custom-select">
           <option value="all">Any</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -201,35 +201,37 @@
           <option value="4">4</option>
           <option value="5+">&ge; 5</option>
         </select>
+        <br/><br/><br/>
+        <label>Price Range (€):</label><br/><br/>
+        <div id="price-slider"></div>
         <br/><br/>
-        <label>Price Range (€):</label><br/>
-        <!-- <div class="range_container">
-        <div class="sliders_control"> -->
-        <span id="min-price-value">40,000</span>
-        <input type="range" id="min-price-slider" min="40000" max="13950000" step="10000" value="40000">
-        <input type="range" id="max-price-slider" min="40000" max="13950000" step="10000" value="13950000">
-        <span id="max-price-value">13,950,000</span>
-        <!-- </div> -->
+        <label>Size Range (m²):</label><br/><br/>
+        <div id="size-slider"></div>
+        <br/><br/><br/>
+        <label class="custom-checkbox">
+          <input type="checkbox" id="apartment" checked>
+          <span class="checkmark"></span>
+          Apartment
+        </label>
+        &nbsp; &nbsp;
+        <label class="custom-checkbox">
+          <input type="checkbox" id="house" checked>
+          <span class="checkmark"></span>
+          House
+        </label>
         <br/><br/>
-        <label>Size Range (m²):</label><br/>
-        <span id="min-size-value">20</span>
-        <input type="range" id="min-size-slider" min="20" max="990" step="10" value="20">
-        <input type="range" id="max-size-slider" min="20" max="990" step="10" value="990">
-        <span id="max-size-value">990</span>
-        <!-- </div> -->
-        <br/><br/>
-        <input type="checkbox" id="apartment" checked>
-        <label for="apartment">Apartment</label>
 
-        <input type="checkbox" id="house" checked>
-        <label for="house">House</label><br/>
-        <br/>
-
-        <input type="checkbox" id="elevator">
-        <label for="elevator">Elevator</label>
-
-        <input type="checkbox" id="garage">
-        <label for="garage">Garage</label>
+        <label class="custom-checkbox">
+          <input type="checkbox" id="elevator">
+          <span class="checkmark"></span>
+          Elevator
+        </label>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <label class="custom-checkbox">
+          <input type="checkbox" id="garage">
+          <span class="checkmark"></span>
+          Garage
+        </label>
       </div>
 
       <div id="feature-based-bar-plot-chart"></div>

@@ -6,26 +6,23 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Visual Estate</title>
-
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../city.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" />
+  
   <link rel="icon" type="image/png" href="..\images\iconVE.png">
 
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/wnumb@1.2.0/wNumb.min.js"></script>
   
-
 </head>
 
 
@@ -168,19 +165,12 @@ Planning potential:</strong> These clusters could guide urban planners, investor
           profiles and neighborhood types.
           Planning potential:</strong> These clusters could guide urban planners, investors, or policy makers in
           identifying affordability zones or gentrification hotspots.
-
-
+          
         </p>
 
       </div>
 
     </div>
-
-  </div>
-
-
-  <div class = "section">
-
 
   </div>
 
@@ -321,18 +311,9 @@ Planning potential:</strong> These clusters could guide urban planners, investor
           the diversity of options available in the city.</p>
       </div>
 
-
-
     </div>
 
   </div>
-
-
-
-
-
-
-
 
 
 
@@ -340,8 +321,8 @@ Planning potential:</strong> These clusters could guide urban planners, investor
     <div id="feature-based-bar-plot-container">
       <div id="feature-based-bar-plot-filters">
 
-        <label>Rooms:</label><br />
-        <select id="rooms-select">
+        <label>Rooms:</label> &nbsp;
+        <select id="rooms-select" class="custom-select">
           <option value="all">Any</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -349,22 +330,13 @@ Planning potential:</strong> These clusters could guide urban planners, investor
           <option value="4">4</option>
           <option value="5+">&ge; 5</option>
         </select>
-        <br /><br />
-        <label>Price Range (€):</label><br />
-        <!-- <div class="range_container">
-        <div class="sliders_control"> -->
-        <span id="min-price-value">30,000</span>
-        <input type="range" id="min-price-slider" min="30000" max="15900000" step="10000" value="30000">
-        <input type="range" id="max-price-slider" min="30000" max="15900000" step="10000" value="15900000">
-        <span id="max-price-value">15,900,000</span>
-        <!-- </div> -->
-        <br /><br />
-        <label>Size Range (m²):</label><br />
-        <span id="min-size-value">10</span>
-        <input type="range" id="min-size-slider" min="10" max="970" step="10" value="10">
-        <input type="range" id="max-size-slider" min="10" max="970" step="10" value="970">
-        <span id="max-size-value">970</span>
-        <!-- </div> -->
+        <br /><br /><br/>
+        <label>Price Range (€):</label><br/><br/>
+        <div id="price-slider"></div>
+        <br/><br/>
+        <label>Size Range (m²):</label><br/><br/>
+        <div id="size-slider"></div>
+
       </div>
 
       <div id="feature-based-bar-plot-chart"></div>

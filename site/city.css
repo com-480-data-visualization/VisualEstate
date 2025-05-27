@@ -90,10 +90,125 @@
   width: 500px; 
 }
 
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background:transparent;
+  border: 2px solid #5a7395;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  width: 70px;
+  height: 35px;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+.custom-select option {
+  background-color: #5a7395; /* Some browsers allow this */
+  color: white;
+  padding: 10px;
+}
+
+#feature-based-bar-plot-filters .noUi-target {
+  height: 12px;
+  border-radius: 20px;
+  background: transparent;
+  border-top: white;
+}
+
+#feature-based-bar-plot-filters .noUi-handle {
+  width: 20px;
+  height: 20px;
+  top: -6px; /* vertically center it */
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  transition: transform 0.2s ease;
+}
+
+#feature-based-bar-plot-filters .noUi-handle::before {
+  display: none;
+}
+
+#feature-based-bar-plot-filters .noUi-handle::after {
+  display: none;
+}
+
+#feature-based-bar-plot-filters .noUi-connect {
+  background: #5a7395;
+}
+
+#feature-based-bar-plot-filters .noUi-handle:hover {
+  transform: scale(1.2);
+  cursor: grab;
+}
+
+#feature-based-bar-plot-filters .noUi-tooltip {
+  background: transparent;
+  color: white;
+  border: transparent;
+  font-size: 12px;
+  top: 20px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Custom checkbox box */
+.custom-checkbox .checkmark {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #5a7395;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+/* Checked checkbox: change background */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #5a7395; /* New background color */
+}
+
+/* White, centered tick mark */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: '';
+  position: absolute;
+  left:2px;
+  bottom: 1px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+}
+
+.custom-checkbox .checkmark:hover {
+  background-color: #fff0f0;
+  cursor: pointer;
+}
+
 #feature-based-bar-plot-chart {
   flex: 1; /* Takes the remaining space */
 }
 
+
+
+
+
+
+/* LONDON */
 
 
 .london_density_map_container {
@@ -519,7 +634,44 @@ ul {
  
 }
 
+.madrid-scatter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  margin-top: 2rem;
+  width: 100%;
 
+}
+
+.madrid-scatter-text {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: row;
+  padding-right: 2rem;
+  gap: 2rem;
+
+}
+
+.madrid-scatter-text h1 {
+  flex: 0 0 30%;
+  font-size: 2.5rem;
+  text-align: left;
+  padding-left: 5rem;
+
+}
+
+.madrid-scatter-text p {
+  flex: 1;
+  font-size: 1rem;
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+
+
+/* BERLIN */
 
 .energy-heating {
   height: 100%;
@@ -600,9 +752,6 @@ ul {
   text-align: justify;
   line-height: 1.5rem;
 }
-
-
-
 
 
 
@@ -784,6 +933,7 @@ ul {
 
 
 
+/* ANIMATIONS */
 
 
 .carousel {
