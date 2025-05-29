@@ -10,15 +10,16 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" />
-  
+
   <link rel="icon" type="image/png" href="..\images\iconVE.png">
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/wnumb@1.2.0/wNumb.min.js"></script>
-  
+
 </head>
 
 
@@ -30,7 +31,7 @@
     <div class="nav-inner">
       <a href="../index.html" class="logo">Visual Estate</a>
       <div class="city_nav">Madrid</div>
-  
+
       <div class="nav-links">
         <a href="#">About</a>
         <div class="dropdown">
@@ -43,7 +44,7 @@
         </div>
         <a href="#">Contact</a>
       </div>
-  
+
       <div class="nav-underline"></div>
     </div>
     <div style="height: 1px; background-color: white; opacity: 0.30; width: 100%;"></div>
@@ -67,76 +68,72 @@
       </div>
     </div>
   </div>
-  
 
-  <div class="section">
-    <div style="display: flex; margin-top: 6rem; flex-direction: column; gap: 2rem; position: relative; z-index: 1;">
-  
-      <!-- Bloc du haut -->
-      <div style="height: 55vh; display: flex; align-items: center; justify-content: center;">
-  
-        <!-- Texte gauche -->
-        <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
-          <h2>Density Insight</h2>
-          <p>
-            Discover how the urban fabric of Madrid is shaped by density. Central zones appear darker, showing intense residential clusters.
-          </p>
-        </div>
-  
-        <!-- Carte centrale -->
-        <iframe
-          src="../assets/madrid/madrid_density_map.html"
-          style="width: 55vw; height: 100%; border: none; border-radius: 12px;"
-          loading="lazy">
+
+  <div class="section" style="background-color: rgb(21, 21, 21);;">
+
+
+    <div class="madrid-map">
+
+
+      <div class="madrid-map-frame">
+        <iframe src="../assets/madrid/madrid_density_map.html"
+          style="width: 50vw; height: 100%; border: none; border-radius: 12px;" loading="lazy">
         </iframe>
-  
-        <!-- Texte droite -->
-        <div style="flex: 1; max-width: 500px; color: white; padding: 1rem;">
-          <h2>Interpretation</h2>
-          <p>
-            Use this map to spot urban pressure points and possible real estate hot zones. Density often correlates with demand.
-          </p>
-        </div>
-  
-      </div>
-  
-      <!-- Bloc du bas -->
-      <div style="height: 55vh; margin-top: -4rem; display: flex; align-items: center; justify-content: center;">
-  
-        <!-- Texte gauche -->
-        <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
-          <h2>Dot Distribution</h2>
-          <p>
-            Every dot stands for a group of people. It helps visualize how population is scattered across Madrid’s districts.
-          </p>
-        </div>
-  
-        <!-- Carte centrale -->
-        <iframe
-          src="../assets/madrid/madrid_dot_map.html"
-          style="width: 55vw; height: 100%; border: none; border-radius: 12px;"
-          loading="lazy">
+
+
+
+        <iframe src="../assets/madrid/madrid_dot_map.html"
+          style="width: 50vw; height: 100%; border: none; border-radius: 12px;" loading="lazy">
         </iframe>
-  
-        <!-- Texte droite -->
-        <div style="flex: 1; max-width: 300px; color: white; padding: 1rem;">
-          <h2>Why it matters</h2>
-          <p>
-            This dot map lets you grasp population spread with intuitive clarity. Ideal for comparing density vs. space.
-          </p>
-        </div>
-  
+
       </div>
-  
+
+      <div class="madrid-map-text">
+        <h1 style = "line-height: 3rem;"> Where Are Madrid’s Hottest Property Zones?</h1>
+        <h3> 🔥 Top Map: Heatmap of Property Density</h3>
+        <p >
+
+
+          The top panel visualizes a smoothed heatmap that highlights concentrations of property listings.
+            <br>
+          • Areas glowing in bright yellow and orange are hotspots with over 350 listings, indicating high demand or
+          dense housing activity — notably in central Madrid and its adjacent districts.
+           <br>
+          • Surrounding zones shaded in purple represent lower listing volumes, often quieter, more residential
+          neighborhoods on the city’s outskirts.
+           <br>
+          • This map helps identify real estate clusters, giving a bird’s-eye view of where the market is most active.
+          <br>
+            <br>
+        </p>
+
+        <h3> 📍 Bottom Map: Point-Level Property Distribution </h3>
+        <p>
+
+
+          The bottom panel takes a more granular approach, plotting individual neighborhoods and districts using colored
+          dots:
+          <br>
+          • Each dot corresponds to a location with listings, and its color encodes the number of properties available:
+          <br>
+          • Bright yellow dots → over 350 listings
+          <br>
+          • Deep purple dots → fewer than 50 listings
+          <br>
+          • The point distribution offers clarity on how listings are spread, making it easier to spot outliers (e.g.,
+          unexpectedly high activity in quieter suburbs) or emerging hubs of development.
+
+        </p>
+      </div>
     </div>
   </div>
-  
-  
-  
+
+
   <div class="section" style="background-color: #111; padding: 2rem 0;">
     <div style="width: 100%; max-width: 1200px; margin-top: 5rem ; display: flex; gap: 2rem; align-items: flex-start;">
 
-  
+
       <!-- Colonne du texte -->
       <div style="flex: 1; color: white; margin-top: 15rem;">
         <h2 style="margin-top: 0;">Insights 🔎</h2>
@@ -150,48 +147,52 @@
       <!-- Colonne de la carte -->
       <div style="flex: 2;">
         <h1 style="color: white;">Average Price by District</h1>
-        <iframe 
-          src="../assets/madrid/madrid_map.html"
-          style="width: 100%; height: 70vh; border: none; border-radius: 12px;"
-          loading="lazy"
-          allowfullscreen>
+        <iframe src="../assets/madrid/madrid_map.html"
+          style="width: 100%; height: 70vh; border: none; border-radius: 12px;" loading="lazy" allowfullscreen>
         </iframe>
       </div>
-  
+
     </div>
   </div>
-  
+
 
   <div class="section" style="background-color: #111; padding: 8rem 2rem;">
-  <div class="madrid-scatter">
+    <div class="madrid-scatter">
 
-    <!-- Text above -->
-    <div class="madrid-scatter-text">
-      <h1>Surface, Price, and the Madrid Market Divide</h1>
-      <p> This scatter plot maps out the relationship between <strong>property surface</strong> and <strong>price</strong> 
-        across the 12 most data-rich districts of Madrid, helping you visualize how real estate value scales with size. 
-        <br><br> Districts like <strong>Chamartín</strong> and <strong>Salamanca</strong> consistently position themselves 
-        well above the mean line, highlighting their status as <u>premium markets</u> where location drives significant price 
-        elevation. In contrast, areas such as <strong>Latina</strong> and <strong>Carabanchel</strong> sit clearly below average, 
-        offering <strong>better price-per-square-meter value</strong> for buyers seeking space without the central-city premium. 
-        <br><br> 
-        The overall pattern confirms that <strong>larger properties generally cost more</strong>, but with noticeable 
-        variation across neighborhoods, pointing to the importance of local market dynamics in shaping real estate pricing. 
-      </p>
+      <!-- Text above -->
+      <div class="madrid-scatter-text">
+        <h1>Surface, Price, and the Madrid Market Divide</h1>
+        <p> This scatter plot maps out the relationship between <strong>property surface</strong> and
+          <strong>price</strong>
+          across the 12 most data-rich districts of Madrid, helping you visualize how real estate value scales with
+          size.
+          <br><br> Districts like <strong>Chamartín</strong> and <strong>Salamanca</strong> consistently position
+          themselves
+          well above the mean line, highlighting their status as <u>premium markets</u> where location drives
+          significant price
+          elevation. In contrast, areas such as <strong>Latina</strong> and <strong>Carabanchel</strong> sit clearly
+          below average,
+          offering <strong>better price-per-square-meter value</strong> for buyers seeking space without the
+          central-city premium.
+          <br><br>
+          The overall pattern confirms that <strong>larger properties generally cost more</strong>, but with noticeable
+          variation across neighborhoods, pointing to the importance of local market dynamics in shaping real estate
+          pricing.
+        </p>
+      </div>
+
+      <!-- Scatter plot below -->
+      <div id="scatter"></div>
+
     </div>
-
-    <!-- Scatter plot below -->
-    <div id="scatter"></div>
-
   </div>
-</div>
 
 
-  <div id="feature-based-bar-plot" class = "section"> 
-    <h1 >Encontremos la casa de sus sueños ! </h1>
-    <div id="feature-based-bar-plot-container", style="position: relative; z-index: 1;">
+  <div id="feature-based-bar-plot" class="section">
+    <h1>Encontremos la casa de sus sueños ! </h1>
+    <div id="feature-based-bar-plot-container" , style="position: relative; z-index: 1;">
       <div id="feature-based-bar-plot-filters">
-          
+
         <label>Rooms:</label> &nbsp;
         <select id="rooms-select" class="custom-select">
           <option value="all">Any</option>
@@ -201,13 +202,13 @@
           <option value="4">4</option>
           <option value="5+">&ge; 5</option>
         </select>
-        <br/><br/><br/>
-        <label>Price Range (€):</label><br/><br/>
+        <br /><br /><br />
+        <label>Price Range (€):</label><br /><br />
         <div id="price-slider"></div>
-        <br/><br/>
-        <label>Size Range (m²):</label><br/><br/>
+        <br /><br />
+        <label>Size Range (m²):</label><br /><br />
         <div id="size-slider"></div>
-        <br/><br/><br/>
+        <br /><br /><br />
         <label class="custom-checkbox">
           <input type="checkbox" id="apartment" checked>
           <span class="checkmark"></span>
@@ -219,14 +220,14 @@
           <span class="checkmark"></span>
           House
         </label>
-        <br/><br/>
+        <br /><br />
 
         <label class="custom-checkbox">
           <input type="checkbox" id="elevator">
           <span class="checkmark"></span>
           Elevator
         </label>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <label class="custom-checkbox">
           <input type="checkbox" id="garage">
           <span class="checkmark"></span>
