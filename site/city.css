@@ -226,7 +226,7 @@
 }
 
 .london_density_map_frame_container {
-  flex: 0 0 50%;
+  flex: 0 0 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -679,27 +679,26 @@ ul {
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding-top: 9rem;
+  padding-top: 7.5rem;
   padding-left: 2rem;
   padding-right: 5rem;
-
   gap: 2rem;
 
 }
 
 .iframes {
-  flex: 0 0 50%;
+  flex: 0 0 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   justify-content: space-evenly;
 
 }
 
 .energy-heating-text {
-  flex: 0 0 50%;
+  flex: 0 0 40%;
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -763,6 +762,7 @@ ul {
   display: flex;             
   flex-direction: row;         
   padding-top: 5rem;
+  text-align: justify;
                  
 }
 
@@ -772,8 +772,9 @@ ul {
   flex-direction: column;
   padding-top: 5rem;
   padding-left: 3rem;
-  padding-right: 3rem;
   padding-bottom: 4rem;
+  text-align: justify;
+
 
 
 
@@ -793,8 +794,8 @@ ul {
 
 .berlin-heatmap ul {
   flex: 1;
-  text-align: left;
-  line-height: 1.70rem;
+  font-size: 16px;
+  line-height: 1.50rem;
 
 }
 
@@ -835,14 +836,14 @@ ul {
   padding-right: 3rem;
   padding-bottom: 5rem;
   gap: 2rem;
+  text-align: justify;
 }
 
 .scatter-text p {
   flex: 1;
-  text-align: justify;
-
   line-height: 1.5rem;
-  padding-right: 3rem;
+  padding-right: 1rem;
+  font-size: 16px;
 }
 
 .scatter-text h1 {
@@ -859,7 +860,6 @@ ul {
   flex: 1;
   display: flex;
   flex-direction: column;
-
 }
 
 
@@ -870,7 +870,8 @@ ul {
   display: flex;             
   flex-direction: column;         
   padding-top: 10rem;
-  gap: 2rem;                   
+  gap: 2rem;      
+  font-size: 16px;             
 }
 
 .berlin-scatter-2 iframe {
@@ -882,14 +883,12 @@ ul {
 }
 
 .scatter-text-2 {
-  flex: 0 0 45%;
+  flex: 0 0 40%;
   display: flex;
   flex-direction: row;
   text-align: justify;
   padding-left: 3rem;
-  padding-right: 3rem;
   padding-bottom: 5rem;
-
   gap: 2rem;
 
 }
@@ -909,6 +908,7 @@ ul {
   text-align: justify;
   padding-top: 1rem;
   line-height: 1.5rem;
+  padding-right: 3rem;
 }
 
 
@@ -918,17 +918,18 @@ ul {
   display: flex;             
   flex-direction: column;         
   padding-top: 10rem;
-  gap: 2rem;       
+  gap: 2rem;     
+  font-size: 16px;  
   
 }
 
 .berlin-scatter-3 iframe {
-  flex: 0 0 40%;
+  flex: 0 0 45%;
   display: flex;
   padding-left: 2rem;
-  padding-right: 2rem;;
-             
+  padding-right: 2rem;       
 }
+
 
 
 
