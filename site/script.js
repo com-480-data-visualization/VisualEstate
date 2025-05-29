@@ -8,7 +8,7 @@ window.onload = function () {
       style: 'mapbox://styles/mapbox/streets-v12',
       projection: 'globe',
       zoom: 1,
-      center: [0, 20],
+      center: [10, 50],
       pitch: 0,
       bearing: 0
     });
@@ -19,6 +19,53 @@ window.onload = function () {
         'high-color': '#add8e6',
         'space-color': 'rgba(0,0,0,0)',
         'horizon-blend': 0.025,
+      });
+
+
+      const cities = [
+        {
+          name: 'London',
+          coordinates: [-0.1278, 51.5074],
+          color: '#621211'
+        },
+        {
+          name: 'Berlin',
+          coordinates: [13.4050, 52.5200],
+          color: '#116212'
+        },
+        {
+          name: 'Madrid',
+          coordinates: [-3.7038, 40.4168],
+          color: '#83bed9'
+        }
+      ];
+
+      cities.forEach(city => {
+  
+        const el = document.createElement('div');
+        el.className = 'marker';
+        el.style.backgroundColor = city.color;
+        el.style.width = '24px';
+        el.style.height = '24px';
+        el.style.borderRadius = '50%';
+        el.style.border = '2px solid white';
+        el.style.cursor = 'pointer';
+
+        
+        const popup = new mapboxgl.Popup({ offset: 25 })
+          .setHTML(`<h3 style="margin: 0; color: ${city.color};">${city.name}</h3>
+                    <p style="margin: 5px 0;">Click to explore</p>`);
+
+
+        new mapboxgl.Marker(el)
+          .setLngLat(city.coordinates)
+          .setPopup(popup)
+          .addTo(map);
+
+        // Add click event to navigate to city page
+        el.addEventListener('click', () => {
+          window.location.href = `cities/${city.name.toLowerCase()}.html`;
+        });
       });
     });
   };
