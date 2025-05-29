@@ -18,7 +18,7 @@ window.onload = function () {
         'color': 'rgba(255,255,255,0.01)',
         'high-color': '#add8e6',
         'space-color': 'rgba(0,0,0,0)',
-        'horizon-blend': 0.025,
+        'horizon-blend': 0.015,
       });
 
 

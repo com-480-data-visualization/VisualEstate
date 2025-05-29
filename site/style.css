@@ -215,6 +215,7 @@ nav .nav-links a {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
+  padding-top: 2rem;
   position: relative;
   font-size: x-large;
   margin-bottom: 2rem;
@@ -227,16 +228,17 @@ nav .nav-links a {
   padding-left: 2rem;
   padding-right: 2rem;
   line-height: 2rem;
+  font-size: 18px;
 }
 
 
 .earth-text-left {
-  transform: translateY(-8rem);
+  transform: translateY(-4rem);
 }
 
 
 .earth-text-right {
-  transform: translateY(8rem);
+  transform: translateY(4rem);
 
 }
 
@@ -381,7 +383,7 @@ nav .nav-links a {
 .contact-divider {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.2);
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .contact-info {
@@ -422,14 +424,13 @@ nav .nav-links a {
 .vote-left {
   flex: 0 0 50%;
   min-width: 250px;
-  line-height: 2.5rem;
-  font-size: 1.5rem;
+  line-height: 2rem;
+  font-size: 1.25rem;
 }
 
 .vote-right {
   flex: 1;
-
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: rgba(255,255,255,0.05);
   border-radius: 10px;
 }
@@ -569,3 +570,5 @@ padding-right: 2rem;
   margin: 0;
   color: #666;
 }
+
+
