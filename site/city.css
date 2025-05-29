@@ -81,6 +81,9 @@
 }
 
 
+#feature-based-bar-plot {
+  padding-top: 8rem;
+}
 #feature-based-bar-plot-container {
   display: flex; 
   align-items: flex-start;
@@ -89,6 +92,8 @@
 
 #feature-based-bar-plot-filters {
   width: 500px; 
+  padding-left: 6rem;
+  padding-right: 3rem;
 }
 
 .custom-select {
