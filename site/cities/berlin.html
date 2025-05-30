@@ -23,6 +23,7 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/wnumb@1.2.0/wNumb.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 
 </head>
 
@@ -86,7 +87,7 @@
           <li><strong style="color: #ff5e5e;">Deep reds in the center and northeast</strong> — notably
             <strong>Mitte</strong>, <strong>Charlottenburg</strong>,<strong>Friedrichsgain</strong>, and
             <strong>Pankow</strong> — signal the <em>highest average prices</em>, pushing past
-            <strong>7,000/m²€</strong>. These are Berlin’s cultural and commercial hubs, attracting young professionals,
+            <strong>7,000/m²€</strong>. These are Berlin's cultural and commercial hubs, attracting young professionals,
             tourists, and international buyers alike.
           </li>
           <br>
@@ -108,7 +109,7 @@
           <li><strong>Urban core = premium:</strong> Convenience, culture, and connectivity come at a cost.</li>
           <li><strong>Outer districts = opportunity:</strong> Lower prices suggest potential for growth and
             gentrification.</li>
-          <li><strong>Strong east-west price asymmetry</strong> continues, rooted in Berlin’s post-reunification
+          <li><strong>Strong east-west price asymmetry</strong> continues, rooted in Berlin's post-reunification
             evolution.</li>
         </ul>
       </div>
@@ -131,12 +132,12 @@
           <br>
              <br>
 
-          💸 Want a clearer picture? Try switching to a <strong>log scale</strong> (click the “Log Scale” button at the
+          💸 Want a clearer picture? Try switching to a <strong>log scale</strong> (click the "Log Scale" button at the
           top left) to better explore trends across all price ranges.
           <br>
    <br>
           <strong>· Densest region:</strong> Most properties cluster between <strong>50–150 sqm</strong> and
-          <strong>€300k–€1M</strong>, representing the heart of Berlin’s real estate market.
+          <strong>€300k–€1M</strong>, representing the heart of Berlin's real estate market.
 
           <br>
           <strong> · Luxury outliers:</strong> Homes above <strong>€2M</strong> tend to be large (150+ sqm) and far less
@@ -166,9 +167,9 @@
 
       <div class="scatter-text-2">
         <h1>A Timeline of Value</h1>
-        <p>From 19th-century charm to modern design, Berlin’s housing market reveals how construction year intertwines
+        <p>From 19th-century charm to modern design, Berlin's housing market reveals how construction year intertwines
           with price. While older buildings often carry premium tags in iconic neighborhoods, more recent builds show
-          how accessibility and area matter just as much as age. This scatterplot maps the evolving value of Berlin’s
+          how accessibility and area matter just as much as age. This scatterplot maps the evolving value of Berlin's
           homes — one dot, one decade, one neighborhood at a time.
 
           <br> <br>
@@ -321,7 +322,7 @@
   <div id="feature-based-bar-plot" class="section">
     
     <h1 style="margin-bottom: 1rem;">Berlin's best matches for your ideal home</h1>
-    <p style="padding-left: 10rem; padding-right: 10rem; text-align: justify; margin-bottom: 5rem; "> 
+    <p style="padding-left: 10rem; padding-right: 10rem; text-align: justify; margin-bottom: 1rem; font-size: 16px; "> 
       Navigating Berlin's housing market is easier when you know where to look. This visualization highlights the 
       <strong>top 5 neighborhoods</strong> where properties most closely match your criteria, based on 
       <strong>price range</strong>, <strong>surface area</strong>, and <strong>room count</strong>. 
@@ -334,7 +335,7 @@
       With every filter you apply, Berlin reshapes itself to fit your needs. 
     </p>
 
-    <div id="feature-based-bar-plot-container">
+    <div id="feature-based-bar-plot-container"> 
       <div id="feature-based-bar-plot-filters">
 
         <label>Rooms:</label> &nbsp;
@@ -358,10 +359,16 @@
       <div id="feature-based-bar-plot-chart"></div>
 
     </div>
- 
-</div>
+
+    <a href="../index.html" class="home-button" >
+      <i data-lucide="home"></i>
+    </a>
+  </div>
 
   <script src="./berlin_main.js" type="module"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 
 </body>
 
