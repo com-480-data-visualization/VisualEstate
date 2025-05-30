@@ -4,6 +4,16 @@
 
 VisualEstate is an interactive web platform that transforms complex real estate data into intuitive, engaging visualizations. Our project, developed for the COM-480 Data Visualization course, helps users explore property markets across major European cities through dynamic, data-driven interfaces.
 
+## 🎥 Demo Video
+
+[![Watch the Demo](https://img.shields.io/badge/Watch-Project%20Demo-blue?style=for-the-badge&logo=dropbox)](https://www.dropbox.com/scl/fi/ntgq6p93ouc4cycjammx2/visual_estate.mp4?rlkey=9cxqdkhs8ticguewd02vwavol&st=j655cgkj&dl=0)
+
+Watch our comprehensive demo video to see VisualEstate in action! The video showcases:
+- Interactive city exploration
+- Dynamic data visualizations
+- Real-time filtering capabilities
+- User interface walkthrough
+
 ## ✨ Key Features
 
 - **Interactive City Maps**: Explore property density and price distributions through dynamic heatmaps
