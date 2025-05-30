@@ -18,8 +18,7 @@ Watch our comprehensive demo video to see VisualEstate in action! The video show
 
 - **Interactive City Maps**: Explore property density and price distributions through dynamic heatmaps
 - **Price Analysis**: 
-  - Detailed price trends across neighborhoods
-  - Price correlation with property features
+  - Detailed price trends across neighborhoods and features
   - Interactive price range filtering
 - **Property Insights**:
   - Distribution of property types and amenities
@@ -87,8 +86,8 @@ VisualEstate/
 3. **Milestone 3** (May 30th) - Final Delivery
    - Complete interactive platform
    - Refined visualizations
-   - Performance optimization
-   - Final documentation
+   - Process Book
+   - Screencast
 
 
 
